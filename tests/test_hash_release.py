@@ -30,6 +30,12 @@ class Fixture(unittest.TestCase):
     expected = json.loads((FIXTURES / "package.expected.json").read_text())
     self.assertEqual(hr.hash_dir(FIXTURES / "package"), expected)
 
+  def test_theme_probe_fixture(self):
+    # The theme's tests/php/package-hashes.test.php pins the same folder and tree.
+    data = hr.hash_dir(FIXTURES / "probe-plugin")
+    self.assertEqual(data, json.loads((FIXTURES / "probe-plugin.expected.json").read_text()))
+    self.assertEqual(data["tree"], "8117cb26b6069f2d3dbdd8f9ccb9070be527bd543cd33597804a8b447f8a6c36")
+
   def test_tree_is_sha256_of_the_lines_file(self):
     expected = json.loads((FIXTURES / "package.expected.json").read_text())
     lines = (FIXTURES / "package.lines.txt").read_bytes()

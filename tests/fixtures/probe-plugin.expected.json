@@ -1,0 +1,14 @@
+{
+  "tree": "8117cb26b6069f2d3dbdd8f9ccb9070be527bd543cd33597804a8b447f8a6c36",
+  "files": {
+    "Z-upper.txt": "d0f6c3189bc9cc236100f6492c454819cb326ec812ebb862adfc924ada4b7fa0",
+    "a-lower.txt": "8c6fb1e9e37a1aea1d308c785192e1a17d71cef08c7f50a68d2e0ab292b2e7f4",
+    "empty.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inc-x.txt": "fd1852d5be850da2760b8b8fab824ab4ed732278d946aecd01d6d262a5826bc4",
+    "inc/a b.txt": "ff6f0e9a530a025ad61dbea8fefa873faf153860b184d14af9bb4f57354f93cd",
+    "inc/dirigible-signature.json": "b2ce53c365079e9ca0076beaa28e26af463769924927bb794e7a4d26444de21d",
+    "inc/sub/deep.txt": "682598b17a41d8605da9941839f8e843eab34d5744b495071ca4f9c4e07d16d9",
+    "inc/été.txt": "1d9f88d73499fc756000e175df064a2b5bdd07bc23618126ad53a7d9ba23148b",
+    "probe-plugin.php": "a7938a178dcb88f8abf4ea5d0816d1b94a44b9fbeab5b512d6601cc227946eb8"
+  }
+}
