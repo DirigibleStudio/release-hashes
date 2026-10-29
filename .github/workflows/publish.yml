@@ -26,7 +26,20 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
+      - name: Check the App secrets
+        id: ready
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
+        run: |
+          if [ -n "$APP_ID" ] && [ -n "$APP_PRIVATE_KEY" ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::APP_ID / APP_PRIVATE_KEY aren't set yet; nothing to do."
+          fi
+
       - name: Read token for the product repos
+        if: steps.ready.outputs.ok == 'true'
         id: app
         uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
         with:
@@ -37,6 +50,7 @@ jobs:
           permission-metadata: read
 
       - name: Hash new releases
+        if: steps.ready.outputs.ok == 'true'
         env:
           GH_TOKEN: ${{ steps.app.outputs.token }}
           REPO: ${{ inputs.repo }}
@@ -52,6 +66,7 @@ jobs:
           echo "status=$status" >> "$GITHUB_ENV"
 
       - name: Commit
+        if: steps.ready.outputs.ok == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -77,4 +92,5 @@ jobs:
           exit 1
 
       - name: Result
+        if: steps.ready.outputs.ok == 'true'
         run: exit "$status"
