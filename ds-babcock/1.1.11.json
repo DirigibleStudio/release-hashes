@@ -1,0 +1,23 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "ds-babcock",
+  "version": "1.1.11",
+  "repo": "DirigibleStudio/ds-babcock",
+  "tag": "1.1.11",
+  "commit": "93cebbb5cb6f313421122f93339ac6a72929a1a4",
+  "published_at": "2024-08-30T18:38:04Z",
+  "tree": "0bf5ba70baa052b9f55abb403990fa374a6172521b1fff3fc2d304c17c7c5dcf",
+  "files": {
+    ".gitattributes": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+    ".gitignore": "9bf9284209c8733b6e9eea8d187130fcbd9e1ee8f010be59543ea03d10320f4b",
+    "README.md": "d2f3f3a7e52651fff726bd5ad7b790a077e89bdfb908589e2340ecc1ebd28cfe",
+    "ds-babcock.php": "2c2e8c359c5173616014ea2aeccb5bb9a2a3413c060c61554399bd3da0bfe61d",
+    "inc/licensing.php": "6e225a6dfc8647e32047b433d1c02035cc178b92837a99ffa756adcb85aa749b",
+    "src/BabcockShipping.php": "d1b774d2bc7d54bd44efee0ff9dca711716ce45439786cee37c839c36e5e1fc5",
+    "src/invoices.php": "d9855481579f7d397112136b1d9565a8a7c5e055f92dbc216a6d8499f287855c",
+    "src/schema.json": "5aabe6ebb8d3086825ee72e4904f0b6f941f7ac96410f2a98c595946dad7428a",
+    "src/script.js": "d527981bc3ee23591b02fda90e26e494f8c508bba8925c8b3840072d995e3f05",
+    "src/shipping.php": "1fa1b40456b0500e7f774290ed2cab147763e62badead3425a0606ffc69eb664",
+    "src/ups-csv-export.php": "44c865998b0e72f6bd15b68dde4328ccc66ba47e97c177deec488840c98e4a16"
+  }
+}

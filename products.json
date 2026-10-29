@@ -182,6 +182,12 @@
       "main": "dirigible-publications.php"
     },
     {
+      "repo": "dirigible-recipes",
+      "slug": "dirigible-recipes",
+      "type": "plugin",
+      "main": "dirigible-recipes.php"
+    },
+    {
       "repo": "dirigible-salespeople",
       "slug": "dirigible-salespeople",
       "type": "plugin",
@@ -216,6 +222,18 @@
       "slug": "dirigible-support",
       "type": "plugin",
       "main": "dirigible-support.php"
+    },
+    {
+      "repo": "dirigible-swag",
+      "slug": "dirigible-swag",
+      "type": "plugin",
+      "main": "dirigible-swag.php"
+    },
+    {
+      "repo": "ds-babcock",
+      "slug": "ds-babcock",
+      "type": "plugin",
+      "main": "ds-babcock.php"
     },
     {
       "repo": "ds-dehumidifiers",

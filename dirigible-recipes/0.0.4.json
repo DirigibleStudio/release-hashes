@@ -1,0 +1,19 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-recipes",
+  "version": "0.0.4",
+  "repo": "DirigibleStudio/dirigible-recipes",
+  "tag": "0.0.4",
+  "commit": "26f68c10cfa029dd5dc316903125dd266dc54726",
+  "published_at": "2022-01-11T21:58:55Z",
+  "tree": "be4a5725a54aeeb76ae63ff10233ebb56dbb81ea9795b431a58ed1654b1a71c9",
+  "files": {
+    ".gitattributes": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+    ".gitignore": "77c1989068f1f914d16142bc8c600af3b88c39458b7473af71d055887591ca16",
+    "README.md": "e0c72f0f8016d55a2adc7c53bead20b4d0d12b6acb281e6ee3de9c02065ed733",
+    "dirigible-recipes.php": "49d1f0789ef74679ef88c892636ddd0f1dd09b1c105a9bbb14e7682ae9890c78",
+    "inc/licensing.php": "4ee1dba3101915a5f13b1c016fcbd2a9e1c2d0afebca0bf0afa1b49b9bcabce1",
+    "src/DirigibleRecipes.php": "8e8407a6b0826dd5628de6d236e56c6b1d95726e8c6002d366d9b72084fd6938",
+    "src/customizer.json": "ed110d2d2d95a86a237151d48a7169fea4bb8b0699648d1000378e40d4c87292"
+  }
+}

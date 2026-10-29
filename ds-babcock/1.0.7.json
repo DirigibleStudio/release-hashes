@@ -1,0 +1,19 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "ds-babcock",
+  "version": "1.0.7",
+  "repo": "DirigibleStudio/ds-babcock",
+  "tag": "1.0.7",
+  "commit": "2974f94cda2b1844009c6c760e7dc0967fcd0833",
+  "published_at": "2024-08-23T18:29:15Z",
+  "tree": "ea5a3995b4356138dd7b61142dd61ac9536f191c6c672211c274052c45d4df78",
+  "files": {
+    ".gitattributes": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+    ".gitignore": "9bf9284209c8733b6e9eea8d187130fcbd9e1ee8f010be59543ea03d10320f4b",
+    "README.md": "d2f3f3a7e52651fff726bd5ad7b790a077e89bdfb908589e2340ecc1ebd28cfe",
+    "ds-babcock.php": "793842cbcfea5fa20edf8f550e448cd4b8904be3eaade18e3a6b2f4019741855",
+    "inc/licensing.php": "d9af50990b0edc352e2c2ff524f9c1c50e17545aad519310b6049089e37c7973",
+    "src/invoices.php": "d9855481579f7d397112136b1d9565a8a7c5e055f92dbc216a6d8499f287855c",
+    "src/shipping.php": "74478cd5e792224c0222e4221ed32c732db3762d8f85c9c183327b043a9e3852"
+  }
+}
