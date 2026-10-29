@@ -1,0 +1,162 @@
+#!/usr/bin/env python3
+"""Write <slug>/<version>.json for releases that don't have one yet.
+
+  bin/publish                      the latest releases of every repo in products.json
+  bin/publish --repo NAME          every release of one repo
+  bin/publish --repo NAME --tag T  one release
+  bin/publish --list FILE          "<repo> <tag>" lines (a backfill)
+
+Needs GH_TOKEN with read access to the product repos. Append-only: an existing
+<slug>/<version>.json is never rewritten. Drafts, prereleases and releases the
+licensing server would reject (bin/hash-release exit 2, e.g. a tag/header
+mismatch) are skipped with a warning. Prints the paths it wrote, one per line;
+--written FILE also saves them there.
+"""
+
+import argparse
+import base64
+import importlib.machinery
+import importlib.util
+import json
+import os
+import pathlib
+import subprocess
+import sys
+import urllib.error
+import urllib.parse
+import urllib.request
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+loader = importlib.machinery.SourceFileLoader("hash_release", str(ROOT / "bin/hash-release"))
+hr = importlib.util.module_from_spec(importlib.util.spec_from_loader("hash_release", loader))
+loader.exec_module(hr)
+
+API = "https://api.github.com"
+LATEST = 10  # releases checked per repo on a scheduled run
+
+
+def warn(message):
+  print("::warning::" + message if os.environ.get("GITHUB_ACTIONS") else "warning: " + message, file=sys.stderr)
+
+
+def api(path, token):
+  request = urllib.request.Request(API + path, headers={
+    "Accept": "application/vnd.github+json",
+    "Authorization": "Bearer " + token,
+    "User-Agent": "dirigible-release-hashes",
+    "X-GitHub-Api-Version": "2022-11-28",
+  })
+  with urllib.request.urlopen(request, timeout=30) as response:
+    return json.load(response)
+
+
+def releases(owner, repo, token, tag=None, every=False):
+  if tag:
+    return [api("/repos/%s/%s/releases/tags/%s" % (owner, repo, urllib.parse.quote(tag, safe="")), token)]
+  if not every:
+    return api("/repos/%s/%s/releases?per_page=%d" % (owner, repo, LATEST), token)
+  found, page = [], 1
+  while True:
+    batch = api("/repos/%s/%s/releases?per_page=100&page=%d" % (owner, repo, page), token)
+    found += batch
+    if len(batch) < 100:
+      return found
+    page += 1
+
+
+def fetch_tag(work, owner, repo, tag, token):
+  git_dir = work / (repo + ".git")
+  if not git_dir.exists():
+    subprocess.run(["git", "init", "-q", "--bare", str(git_dir)], check=True)
+  basic = base64.b64encode(("x-access-token:" + token).encode()).decode()
+  # The header goes in through the environment so it never shows in a process list.
+  env = dict(os.environ, GIT_CONFIG_COUNT="1", GIT_CONFIG_KEY_0="http.https://github.com/.extraheader",
+             GIT_CONFIG_VALUE_0="AUTHORIZATION: basic " + basic, GIT_TERMINAL_PROMPT="0")
+  ref = "refs/tags/" + tag
+  subprocess.run(["git", "-C", str(git_dir), "fetch", "-q", "--depth", "1", "--no-tags",
+                  "https://github.com/%s/%s.git" % (owner, repo), "+%s:%s" % (ref, ref)],
+                 check=True, env=env)
+  return git_dir
+
+
+def publish(product, owner, release, work, token):
+  """Returns the path written, or None."""
+  tag = release["tag_name"]
+  label = "%s %s" % (product["repo"], tag)
+  if release.get("draft") or release.get("prerelease"):
+    return None
+  try:
+    version = hr.normalized_version(tag)
+  except hr.Rejected as e:
+    warn("%s skipped: %s" % (label, e))
+    return None
+  out = ROOT / product["slug"] / (version + ".json")
+  if out.exists():
+    return None
+  git_dir = fetch_tag(work, owner, product["repo"], tag, token)
+  try:
+    data = hr.hash_release(git_dir, tag, product["slug"], "%s/%s" % (owner, product["repo"]),
+                           product["type"], product["main"], release.get("published_at"))
+  except hr.Rejected as e:
+    warn("%s skipped: the licensing server would reject it: %s" % (label, e))
+    return None
+  out.parent.mkdir(exist_ok=True)
+  with open(out, "x", encoding="utf-8") as f:  # "x": never overwrite
+    f.write(hr.dumps(data))
+  return out.relative_to(ROOT).as_posix()
+
+
+def main():
+  parser = argparse.ArgumentParser()
+  parser.add_argument("--repo")
+  parser.add_argument("--tag")
+  parser.add_argument("--list")
+  parser.add_argument("--work", default=os.environ.get("RUNNER_TEMP", "/tmp") + "/release-hashes-git")
+  parser.add_argument("--written")
+  args = parser.parse_args()
+  token = os.environ.get("GH_TOKEN")
+  if not token:
+    sys.exit("GH_TOKEN is required")
+
+  catalog = json.loads((ROOT / "products.json").read_text())
+  owner = catalog["owner"]
+  by_repo = {p["repo"]: p for p in catalog["products"]}
+  work = pathlib.Path(args.work)
+  work.mkdir(parents=True, exist_ok=True)
+
+  jobs = []  # (product, tag or None, every)
+  if args.list:
+    for line in pathlib.Path(args.list).read_text().splitlines():
+      if line.strip() and not line.startswith("#"):
+        repo, tag = line.split()
+        jobs.append((repo, tag, False))
+  elif args.repo:
+    jobs.append((args.repo, args.tag or None, not args.tag))
+  elif args.tag:
+    sys.exit("--tag needs --repo")
+  else:
+    jobs = [(repo, None, False) for repo in by_repo]
+
+  written, failed = [], 0
+  for repo, tag, every in jobs:
+    if repo not in by_repo:
+      warn("%s is not in products.json" % repo)
+      failed += 1
+      continue
+    try:
+      for release in releases(owner, repo, token, tag, every):
+        path = publish(by_repo[repo], owner, release, work, token)
+        if path:
+          print(path)
+          written.append(path)
+    except (urllib.error.URLError, subprocess.CalledProcessError, ValueError) as e:
+      warn("%s %s failed: %s" % (repo, tag or "", e))
+      failed += 1
+
+  if args.written:
+    pathlib.Path(args.written).write_text("".join(p + "\n" for p in written))
+  return 1 if failed else 0
+
+
+if __name__ == "__main__":
+  sys.exit(main())

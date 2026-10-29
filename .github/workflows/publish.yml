@@ -1,0 +1,80 @@
+name: Publish release hashes
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: "Product repo (e.g. dirigible-events). Empty: the latest releases of every repo"
+        required: false
+      tag:
+        description: "Tag (needs repo). Empty with a repo: every release of that repo"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Read token for the product repos
+        id: app
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: DirigibleStudio
+          permission-contents: read
+          permission-metadata: read
+
+      - name: Hash new releases
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+          REPO: ${{ inputs.repo }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
+          args=()
+          [ -n "$REPO" ] && args+=(--repo "$REPO")
+          [ -n "$TAG" ] && args+=(--tag "$TAG")
+          status=0
+          bin/publish --written "$RUNNER_TEMP/written.txt" "${args[@]}" || status=$?
+          echo "status=$status" >> "$GITHUB_ENV"
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -s "$RUNNER_TEMP/written.txt" ]; then
+            xargs -d '\n' git add -- < "$RUNNER_TEMP/written.txt"
+            # Append-only: refuse anything but new files.
+            if [ -n "$(git diff --cached --name-only --diff-filter=a)" ]; then
+              echo "::error::refusing to change an existing hash file"; exit 1
+            fi
+            git commit -q -m "Hashes: $(sed 's#/\(.*\)\.json$# \1#' "$RUNNER_TEMP/written.txt" | paste -sd, - | sed 's/,/, /g')"
+          elif [ "${{ github.event_name }}" = schedule ] && [ $(( $(date +%s) - $(git log -1 --format=%ct) )) -gt $(( 30 * 86400 )) ]; then
+            # GitHub stops schedules in a repo with no commits for 60 days.
+            date -u +%Y-%m-%d > .heartbeat
+            git add .heartbeat
+            git commit -q -m "Heartbeat"
+          else
+            exit 0
+          fi
+          for i in 1 2 3; do
+            git push -q && exit 0
+            git pull -q --rebase
+          done
+          exit 1
+
+      - name: Result
+        run: exit "$status"
