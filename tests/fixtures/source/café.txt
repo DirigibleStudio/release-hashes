@@ -1,0 +1,1 @@
+Non-ASCII name, NFC, sorted by its UTF-8 bytes.

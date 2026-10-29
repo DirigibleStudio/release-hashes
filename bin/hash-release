@@ -1,0 +1,248 @@
+#!/usr/bin/env python3
+"""Hash one Dirigible release the way sites check it.
+
+  bin/hash-release --git-dir DIR --tag TAG --slug SLUG --repo OWNER/NAME \
+                   --type plugin|theme --main FILE [--published-at ISO]
+      Hash the tree `git archive TAG` produces and print <slug>/<version>.json.
+  bin/hash-release --dir DIR
+      Hash a plain folder with the same rules and print {tree, files}.
+
+The spec (shared word for word with the theme's check):
+  1. The files `git archive <tag>` produces (export-ignore applies, as in
+     GitHub's source zip).
+  2. Minus the licensing server's .dsignore rules: literal paths and folder
+     prefixes, read from the top folder only; the top-level .dsignore itself
+     is dropped. A rule the server would reject fails here too.
+  3. Minus the top-level dirigible-signature.json (the legacy signature).
+  4. sha256 of each file's bytes, keyed by its "/" path under the top folder.
+  5. tree = sha256 of "<sha256> <path>\\n" lines, sorted bytewise by path.
+
+Anything else the server rejects (symlinks, special files, a tag that isn't a
+version, a header Version that doesn't match the tag, a missing main file,
+over 10,000 files or 500 MB) fails with exit status 2.
+"""
+
+import argparse
+import hashlib
+import io
+import json
+import pathlib
+import re
+import subprocess
+import sys
+import tarfile
+
+FORMAT = "dirigible-hashes-v1"
+SIGNATURE = "dirigible-signature.json"
+DSIGNORE = ".dsignore"
+MAX_FILES = 10_000
+MAX_BYTES = 500 * 1024 * 1024
+HEADER_BYTES = 64 * 1024
+VERSION = re.compile(r"^\d+(?:\.\d+){0,3}(?:[-+][0-9A-Za-z.-]+)?$")
+# JavaScript's String.prototype.trim() set (the server trims .dsignore lines with it).
+JS_SPACE = "\t\n\v\f\r                  　﻿"
+# Pin anything local config could change in `git archive` output.
+GIT = ["git", "-c", "core.autocrlf=false", "-c", "core.eol=lf", "-c", "core.attributesFile=/dev/null"]
+
+
+class Rejected(Exception):
+  """The licensing server would refuse to package this release."""
+
+
+def safe_path(value):
+  normalized = value.replace("\\", "/")
+  parts = normalized.split("/")
+  if (not normalized or normalized.startswith("/") or re.match(r"^[A-Za-z]:", normalized)
+      or any(part in ("", ".", "..") for part in parts)):
+    raise Rejected("unsafe path: %r" % value)
+  return "/".join(parts)
+
+
+def parse_dsignore(data):
+  """Mirror of ds-licensing parseIgnoreRules(): [(path, is_directory)]."""
+  rules = []
+  for raw in re.split(r"\r?\n", data.decode("utf-8", errors="replace")):
+    line = raw.strip(JS_SPACE)
+    if not line or line.startswith("#"):
+      continue
+    if line.startswith("!") or re.search(r"[*?\[\]\\]", line) or ".." in line:
+      raise Rejected(".dsignore rule %r: only safe, relative literal paths and folder prefixes" % line)
+    rules.append((safe_path(re.sub(r"/$", "", re.sub(r"^/", "", line, count=1), count=1)), line.endswith("/")))
+  return rules
+
+
+def ignored(path, rules):
+  """Mirror of shouldIgnore(), applied as the server's walk does: an ignored folder hides everything in it."""
+  parts = path.split("/")
+  for i in range(1, len(parts) + 1):
+    prefix = "/".join(parts[:i])
+    if prefix == DSIGNORE:
+      return True
+    for rule, directory in rules:
+      if prefix == rule or (directory and prefix.startswith(rule + "/")):
+        return True
+  return False
+
+
+def select(files):
+  """files: {path: bytes} as unpacked. Returns what the server packages, then what gets hashed."""
+  rules = parse_dsignore(files[DSIGNORE]) if DSIGNORE in files else []
+  packaged = {p: b for p, b in files.items() if not ignored(p, rules)}
+  hashed = dict(packaged)
+  hashed.pop(SIGNATURE, None)
+  return packaged, hashed
+
+
+def digest(files):
+  hashes = {p: hashlib.sha256(b).hexdigest() for p, b in files.items()}
+  ordered = sorted(hashes, key=lambda p: p.encode("utf-8", "surrogateescape"))
+  lines = "".join("%s %s\n" % (hashes[p], p) for p in ordered)
+  tree = hashlib.sha256(lines.encode("utf-8", "surrogateescape")).hexdigest()
+  return tree, {p: hashes[p] for p in ordered}
+
+
+def check_limits(files):
+  if len(files) > MAX_FILES or sum(len(b) for b in files.values()) > MAX_BYTES:
+    raise Rejected("over the server's extraction limits (%d files)" % len(files))
+
+
+def read_dir(root):
+  root = pathlib.Path(root)
+  files = {}
+  for path in sorted(root.rglob("*")):
+    rel = path.relative_to(root).as_posix()
+    if path.is_symlink():
+      raise Rejected("symlink: " + rel)
+    if path.is_dir():
+      continue
+    if not path.is_file():
+      raise Rejected("unsupported file type: " + rel)
+    files[safe_path(rel)] = path.read_bytes()
+  return files
+
+
+def git(git_dir, *args, stdin=None):
+  return subprocess.run(GIT + ["-C", str(git_dir)] + list(args), check=True, capture_output=True, input=stdin).stdout
+
+
+def read_tag(git_dir, tag):
+  """Files from `git archive <tag>`, plus the commit it names."""
+  commit = git(git_dir, "rev-parse", "--verify", "refs/tags/%s^{commit}" % tag).decode().strip()
+  for line in git(git_dir, "ls-tree", "-r", "--full-tree", commit).decode("utf-8", "surrogateescape").splitlines():
+    mode, _, rest = line.partition(" ")
+    name = rest.split("\t", 1)[1]
+    if name.rsplit("/", 1)[-1] == ".gitattributes":
+      attributes = git(git_dir, "show", "%s:%s" % (commit, name))
+      # export-subst output depends on the clone (abbreviation length), filters on local config.
+      if re.search(rb"export-subst|filter=", attributes):
+        raise ValueError("%s uses export-subst or filter=, which git archive can't reproduce" % name)
+    if mode == "120000":
+      raise Rejected("symlink: " + name)
+  info_attributes = pathlib.Path(git(git_dir, "rev-parse", "--git-path", "info/attributes").decode().strip())
+  if not info_attributes.is_absolute():
+    info_attributes = pathlib.Path(git_dir) / info_attributes
+  if info_attributes.exists() and info_attributes.read_bytes().strip():
+    raise ValueError("%s would change git archive output" % info_attributes)
+
+  archive = io.BytesIO(git(git_dir, "archive", "--format=tar", commit))
+  files = {}
+  with tarfile.open(fileobj=archive, mode="r:", encoding="utf-8", errors="surrogateescape") as tar:
+    for member in tar:
+      if member.isdir():
+        continue
+      if member.issym() or member.islnk():
+        raise Rejected("link: " + member.name)
+      if not member.isfile():
+        raise Rejected("unsupported file type: " + member.name)
+      files[safe_path(member.name)] = tar.extractfile(member).read()
+  return commit, files
+
+
+def header_version(source, kind):
+  """Mirror of parseWordPressHeaders(): the first Plugin/Theme Name and Version headers."""
+  wanted = "Plugin Name" if kind == "plugin" else "Theme Name"
+  found = {}
+  for line in re.split(r"\r?\n", source[:HEADER_BYTES].decode("utf-8", errors="replace")):
+    line = re.sub(r"^\s*(?:/\*+|\*/|\*|//|#)?\s?", "", line, count=1)
+    name, sep, value = line.partition(":")
+    name, value = name.strip(), value.strip()
+    if sep and name and name in (wanted, "Version") and value and name not in found:
+      found[name] = value
+  if wanted not in found or "Version" not in found:
+    raise Rejected("main file lacks %s and Version headers" % wanted)
+  return found["Version"]
+
+
+def normalized_version(tag):
+  version = re.sub(r"^v", "", tag.strip(), count=1, flags=re.I)
+  if not VERSION.match(version):
+    raise Rejected("tag %r is not a version" % tag)
+  return version
+
+
+def hash_release(git_dir, tag, slug, repo, kind, main, published_at=None):
+  version = normalized_version(tag)
+  commit, unpacked = read_tag(git_dir, tag)
+  check_limits(unpacked)
+  main = safe_path(main)
+  if main not in unpacked:
+    raise Rejected("main file %s missing" % main)
+  header = header_version(unpacked[main], kind)
+  if header != version:
+    raise Rejected("tag %s does not match header Version %s" % (tag, header))
+  packaged, hashed = select(unpacked)
+  if main not in packaged:
+    raise Rejected("main file %s is excluded by .dsignore" % main)
+  tree, files = digest(hashed)
+  return {
+    "format": FORMAT,
+    "slug": slug,
+    "version": version,
+    "repo": repo,
+    "tag": tag,
+    "commit": commit,
+    "published_at": published_at,
+    "tree": tree,
+    "files": files,
+  }
+
+
+def hash_dir(root):
+  unpacked = read_dir(root)
+  check_limits(unpacked)
+  tree, files = digest(select(unpacked)[1])
+  return {"tree": tree, "files": files}
+
+
+def dumps(data):
+  return json.dumps(data, indent=2, ensure_ascii=False) + "\n"
+
+
+def main(argv=None):
+  parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+  parser.add_argument("--dir")
+  parser.add_argument("--git-dir")
+  parser.add_argument("--tag")
+  parser.add_argument("--slug")
+  parser.add_argument("--repo")
+  parser.add_argument("--type", choices=("plugin", "theme"))
+  parser.add_argument("--main")
+  parser.add_argument("--published-at")
+  args = parser.parse_args(argv)
+  try:
+    if args.dir:
+      data = hash_dir(args.dir)
+    else:
+      missing = [n for n in ("git_dir", "tag", "slug", "repo", "type", "main") if not getattr(args, n)]
+      if missing:
+        parser.error("missing --" + ", --".join(m.replace("_", "-") for m in missing))
+      data = hash_release(args.git_dir, args.tag, args.slug, args.repo, args.type, args.main, args.published_at)
+  except Rejected as e:
+    print("hash-release: rejected: %s" % e, file=sys.stderr)
+    return 2
+  sys.stdout.write(dumps(data))
+  return 0
+
+
+if __name__ == "__main__":
+  sys.exit(main())

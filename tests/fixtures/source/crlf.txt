@@ -1,0 +1,2 @@
+Windows line endings
+are hashed as stored.

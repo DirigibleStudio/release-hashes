@@ -1,0 +1,239 @@
+{
+  "owner": "DirigibleStudio",
+  "products": [
+    {
+      "repo": "bbi-directory",
+      "slug": "bbi-directory",
+      "type": "plugin",
+      "main": "bbi-directory.php"
+    },
+    {
+      "repo": "better-breeder",
+      "slug": "better-breeder",
+      "type": "plugin",
+      "main": "better-breeder.php"
+    },
+    {
+      "repo": "better-breeder-extended",
+      "slug": "better-breeder-extended",
+      "type": "plugin",
+      "main": "better-breeder-extended.php"
+    },
+    {
+      "repo": "colony-framework",
+      "slug": "colony-framework",
+      "type": "plugin",
+      "main": "colony-framework.php"
+    },
+    {
+      "repo": "dirigible-ai-alt-text",
+      "slug": "dirigible-ai-alt-text",
+      "type": "plugin",
+      "main": "dirigible-ai-alt-text.php"
+    },
+    {
+      "repo": "dirigible-artworks",
+      "slug": "dirigible-artworks",
+      "type": "plugin",
+      "main": "dirigible-artworks.php"
+    },
+    {
+      "repo": "dirigible-blocks",
+      "slug": "dirigible-blocks",
+      "type": "plugin",
+      "main": "dirigible-blocks.php"
+    },
+    {
+      "repo": "dirigible-blocks-extended",
+      "slug": "dirigible-blocks-extended",
+      "type": "plugin",
+      "main": "dirigible-blocks-extended.php"
+    },
+    {
+      "repo": "dirigible-booking",
+      "slug": "dirigible-booking",
+      "type": "plugin",
+      "main": "dirigible-booking.php"
+    },
+    {
+      "repo": "dirigible-cards",
+      "slug": "dirigible-cards",
+      "type": "plugin",
+      "main": "dirigible-cards.php"
+    },
+    {
+      "repo": "dirigible-courses",
+      "slug": "dirigible-courses",
+      "type": "plugin",
+      "main": "dirigible-courses.php"
+    },
+    {
+      "repo": "dirigible-documentation",
+      "slug": "dirigible-documentation",
+      "type": "plugin",
+      "main": "dirigible-documentation.php"
+    },
+    {
+      "repo": "dirigible-events",
+      "slug": "dirigible-events",
+      "type": "plugin",
+      "main": "dirigible-events.php"
+    },
+    {
+      "repo": "dirigible-fleet",
+      "slug": "dirigible-fleet",
+      "type": "plugin",
+      "main": "dirigible-fleet.php"
+    },
+    {
+      "repo": "dirigible-font-host",
+      "slug": "dirigible-font-host",
+      "type": "plugin",
+      "main": "dirigible-font-host.php"
+    },
+    {
+      "repo": "dirigible-fonts",
+      "slug": "dirigible-fonts",
+      "type": "plugin",
+      "main": "dirigible-fonts.php"
+    },
+    {
+      "repo": "dirigible-footer",
+      "slug": "dirigible-footer",
+      "type": "plugin",
+      "main": "dirigible-footer.php"
+    },
+    {
+      "repo": "dirigible-hours",
+      "slug": "dirigible-hours",
+      "type": "plugin",
+      "main": "dirigible-hours.php"
+    },
+    {
+      "repo": "dirigible-locations",
+      "slug": "dirigible-locations",
+      "type": "plugin",
+      "main": "dirigible-locations.php"
+    },
+    {
+      "repo": "dirigible-locations-extended",
+      "slug": "dirigible-locations-extended",
+      "type": "plugin",
+      "main": "dirigible-locations-extended.php"
+    },
+    {
+      "repo": "dirigible-mail",
+      "slug": "dirigible-mail",
+      "type": "plugin",
+      "main": "dirigible-mail.php"
+    },
+    {
+      "repo": "dirigible-manifest",
+      "slug": "dirigible-manifest",
+      "type": "plugin",
+      "main": "dirigible-manifest.php"
+    },
+    {
+      "repo": "dirigible-mega-menu",
+      "slug": "dirigible-mega-menu",
+      "type": "plugin",
+      "main": "dirigible-mega-menu.php"
+    },
+    {
+      "repo": "dirigible-music",
+      "slug": "dirigible-music",
+      "type": "plugin",
+      "main": "dirigible-music.php"
+    },
+    {
+      "repo": "dirigible-optimize",
+      "slug": "dirigible-optimize",
+      "type": "plugin",
+      "main": "dirigible-optimize.php"
+    },
+    {
+      "repo": "dirigible-packages",
+      "slug": "dirigible-packages",
+      "type": "plugin",
+      "main": "dirigible-packages.php"
+    },
+    {
+      "repo": "dirigible-people",
+      "slug": "dirigible-people",
+      "type": "plugin",
+      "main": "dirigible-people.php"
+    },
+    {
+      "repo": "dirigible-portfolio",
+      "slug": "dirigible-portfolio",
+      "type": "plugin",
+      "main": "dirigible-portfolio.php"
+    },
+    {
+      "repo": "dirigible-products",
+      "slug": "dirigible-products",
+      "type": "plugin",
+      "main": "dirigible-products.php"
+    },
+    {
+      "repo": "dirigible-publications",
+      "slug": "dirigible-publications",
+      "type": "plugin",
+      "main": "dirigible-publications.php"
+    },
+    {
+      "repo": "dirigible-salespeople",
+      "slug": "dirigible-salespeople",
+      "type": "plugin",
+      "main": "dirigible-salespeople.php"
+    },
+    {
+      "repo": "dirigible-seo",
+      "slug": "dirigible-seo",
+      "type": "plugin",
+      "main": "dirigible-seo.php"
+    },
+    {
+      "repo": "dirigible-shows",
+      "slug": "dirigible-shows",
+      "type": "plugin",
+      "main": "dirigible-shows.php"
+    },
+    {
+      "repo": "dirigible-social-relay",
+      "slug": "dirigible-social-relay",
+      "type": "plugin",
+      "main": "dirigible-social-relay.php"
+    },
+    {
+      "repo": "dirigible-studio-5",
+      "slug": "dirigible",
+      "type": "theme",
+      "main": "style.css"
+    },
+    {
+      "repo": "dirigible-support",
+      "slug": "dirigible-support",
+      "type": "plugin",
+      "main": "dirigible-support.php"
+    },
+    {
+      "repo": "ds-dehumidifiers",
+      "slug": "ds-dehumidifiers",
+      "type": "plugin",
+      "main": "ds-dehumidifiers.php"
+    },
+    {
+      "repo": "nimblocks",
+      "slug": "nimblocks",
+      "type": "plugin",
+      "main": "nimblocks.php"
+    },
+    {
+      "repo": "thermastor-plugin",
+      "slug": "thermastor-plugin",
+      "type": "plugin",
+      "main": "thermastor-plugin.php"
+    }
+  ]
+}
