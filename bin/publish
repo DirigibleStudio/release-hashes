@@ -147,7 +147,7 @@ def main():
       for release in releases(owner, repo, token, tag, every):
         path = publish(by_repo[repo], owner, release, work, token)
         if path:
-          print(path)
+          print(path, flush=True)
           written.append(path)
     except (urllib.error.URLError, subprocess.CalledProcessError, ValueError) as e:
       warn("%s %s failed: %s" % (repo, tag or "", e))
