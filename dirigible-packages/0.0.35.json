@@ -1,0 +1,30 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-packages",
+  "version": "0.0.35",
+  "repo": "DirigibleStudio/dirigible-packages",
+  "tag": "0.0.35",
+  "commit": "d72f0d9bea43a5091850aa86a37827f1ab612034",
+  "published_at": "2026-10-22T02:03:38Z",
+  "tree": "073a3addf5e72ea5415e332aa1c7d272cc5883c07d9ed34d6acb18406cdf00a8",
+  "files": {
+    "dirigible-packages.php": "2511fc61bbcab3c1c9d998bb7ec119657759fe30e4c80f2f814a33fae902a9c2",
+    "inc/licensing.php": "4ba0b2bcf07f6cadf0bdb1f052a1c0f383242e3c70e3a1bb81dfc2702175846d",
+    "src/DirigiblePackages.php": "80ca0a569a132ca0c5a2d3c426b8bd24dd94c28891728a093c6a994842db8b48",
+    "src/blocks/blocks-manifest.php": "7018f0278f23bd0aa796e503fdd43efba482f00f2b01731114ab97746ffffa2e",
+    "src/blocks/blocks.php": "183a0a49de75f5c0100e80baa30047e5075ff2914249690a734bd605637225ca",
+    "src/blocks/packages/block.json": "676e5243baaab480bce9891716ebe2ab4c453d5ae176b92d6c2d2bb62f6cf587",
+    "src/blocks/packages/fields.php": "f6ea2a8a09370fe620a08e5c144d00a8753ead9e1a0454271a54c57f5cdae432",
+    "src/blocks/packages/render.php": "872917c78af2f9e548233153aeec24042a03806d3cd4442f9e0dce8a5c80f500",
+    "src/blocks/reservation-form/block.json": "759354c99de8bb7679fd6cbc2654c254e64dcedf407059f1f35009439cbf100e",
+    "src/blocks/reservation-form/fields.php": "00aba3928cd622ad67c0f81ecd5aa8699e07f8f4908c045fe34f6a2dc0067b37",
+    "src/blocks/reservation-form/render.php": "65725bde066fb4398db1deef5eab0070f7d06073a62153bb82e300cf9c734357",
+    "src/customizer.json": "6789590efc4d2ad481e3b9839816922127bcb754ec41b84eaef87facf2974c80",
+    "src/helpers.php": "291adf563215e14a14e9ea99503678a5a0dc0c62eac259e4560f35081f6f1437",
+    "src/import-export.php": "936e13feed8fb61aaea7698812685b61748a8ce76496069c0dacab8718a462ad",
+    "src/templates/other-packages.php": "b0c58c4a5f5ba6b15921c78b9daec2724dbbc98b5b9ae500b44db29f92c942a4",
+    "src/templates/package-card-large.php": "1e25a537dc057d2669e3eb362dd8786f65837a920f737d6966c5b06a114b9cc7",
+    "src/templates/package-card.php": "29aca76a1b66937ed750d48c74894f3148759430e14f49dd0285d240d4a2f5bd",
+    "src/templates/package-form.php": "793d845385898c19f23635cca8ebbdd4fdfb0f063c350bd65e56b736a534ce78"
+  }
+}

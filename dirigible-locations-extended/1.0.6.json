@@ -1,0 +1,14 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-locations-extended",
+  "version": "1.0.6",
+  "repo": "DirigibleStudio/dirigible-locations-extended",
+  "tag": "1.0.6",
+  "commit": "ac739c6d2f0c14b3871ad15579fc14e8220b2228",
+  "published_at": "2026-09-30T16:31:53Z",
+  "tree": "f70c054756a89c1afbf974bdc2cd0992e40e172df29141e09d68d1f71a0b4501",
+  "files": {
+    "dirigible-locations-extended.php": "02212e9b98469262249459dfe269acc226ccca2cb958e73d173699778f78ef1e",
+    "inc/licensing.php": "4382adb004fb4fbe55fb7358a9f6bac774fefaf316fda0315fa389d749271cc0"
+  }
+}

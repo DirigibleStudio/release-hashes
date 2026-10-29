@@ -1,0 +1,20 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-seo",
+  "version": "2.3.55",
+  "repo": "DirigibleStudio/dirigible-seo",
+  "tag": "2.3.55",
+  "commit": "2343b9b985a08e506bb13016907646aff405a061",
+  "published_at": "2026-10-05T19:38:27Z",
+  "tree": "9ceb3a8cbab83ea22cf7f433ca1d4ee4cb0e3eae9ab02f8f47f58198bdd5c267",
+  "files": {
+    "dirigible-seo.php": "5437e35031d28a07b18b98754e5070e314fe289d07a90aaff7e5f2ec0f1702a8",
+    "dist/ds-seo.css": "dc30b9efc348f47ba7dc8fe63298467eef2c82e18509fcc0d104ef37014c8606",
+    "inc/licensing.php": "4ba0b2bcf07f6cadf0bdb1f052a1c0f383242e3c70e3a1bb81dfc2702175846d",
+    "src/DirigibleSEO.php": "e2b871373c73a4313264a4aac9dfd9b1c7f6240d37250cbf5af4c1dcc7966dc3",
+    "src/ajax.php": "805993551a2280d34b84ee125090f33263402c6eeca2263a5114dae4094869ed",
+    "src/customizer/options/entity.json": "225f080adf41132c508cef906366e076d3702608963fe6bb80e0ef04ed1f8029",
+    "src/ds-seo.js": "576278e75dedb4060a479b8338d55233780ea6b234407072e8eb9bcc7988d7ef",
+    "src/seo.json": "33ad247a1d70addd2d08e58b80ae41cce2f969a698289e12455ce0146d9f1f00"
+  }
+}

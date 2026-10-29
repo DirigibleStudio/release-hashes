@@ -1,0 +1,32 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-ai-alt-text",
+  "version": "0.0.63",
+  "repo": "DirigibleStudio/dirigible-ai-alt-text",
+  "tag": "0.0.63",
+  "commit": "34924fa09aa0cb053895d5628985534b5acba466",
+  "published_at": "2026-10-08T22:04:25Z",
+  "tree": "503c23dbdaccde585ffc7ca19da20f861d2fe785e0cc5735e4b30c35c89399f3",
+  "files": {
+    "dirigible-ai-alt-text.php": "fd7b9c1211f3857cf88c2269d4cc40c5cfd7aafa3d27c216a1b60158858974f0",
+    "dist/admin.css": "46f4685f9b7ea8d16a5b3a6a71962491efda482f67fee0ff65e8eb2c5e9b9c7b",
+    "dist/admin.js": "a574bfe8734db8e52b6f151592a72bfecdd618e2e03ab7bd90e6bdae4d5aaadb",
+    "dist/arrows-rotate-solid-full.svg": "74da5872590f3f317c224ec00b1d6d6098178f79d8f8cb9624888bebb968c8e4",
+    "dist/config-accordion.js": "684af9e8e005ed46043fde24a4b11c66b69970b85cd48c6bb1bef8f187270590",
+    "dist/editor-excerpt.js": "02f45de3ecb4f2354a54260dbe99002c6d7bacde41167e89937623e457107e49",
+    "dist/editor-seo.js": "3e5493cc638e387c2cb27adfb40b441cbc7df0d063206fa2c7a3c8642b1d8cde",
+    "dist/excerpts.js": "f37053ac6ec34db557bd700bafd9ad977b00c478430555b9c41ad7a2e56c27ff",
+    "dist/featured-images.js": "265fe9d1c8b9130cabff1b2217b650e8109046916a5c7feaa0c95fc4310495f7",
+    "dist/focal-points.js": "e4f404f1d2cc2e8fe413c887128e5ee83005f7d89e7ac765b468695ebdfc334e",
+    "dist/grid-density.js": "d6b7bcc9a950fec12ff646c12f0d36c2dc482b712a966413b65c80213001afb0",
+    "dist/lock-solid-full.svg": "5b62f8b85ae033323a0da13ec3250bd185530bcb9069a307ec9b4413e162458e",
+    "dist/pen-to-square-solid-full.svg": "6d6c1a29c778ccc422d26002de766003180423cd576bc73c8d2083b86bae1433",
+    "dist/trash-solid-full.svg": "19dc46c1939e2a0bdc6a45d62776a0fe8d6b80990e36dc3f655758b72b4bbf47",
+    "dist/wand-magic-sparkles-solid-full.svg": "fa3313a4e8cb28c8c5b5de6f0bc9f09063f0d1f685d11e9b60a95ac390c75cb2",
+    "inc/licensing.php": "4ba0b2bcf07f6cadf0bdb1f052a1c0f383242e3c70e3a1bb81dfc2702175846d",
+    "src/DirigibleAIAltText.php": "966936856003ec74d7f1a1b3841fc3a2103fdec43b8ec55c6c881b267d848b46",
+    "src/ajax.php": "1766c4b1a16d70627b0a8b9d4bbb5ebfbd60a8a69081a388b18086df81952bcd",
+    "src/auto-alt.php": "acde282cc835fbfe0c5923fe80b2a86aa67300136b906ffd8e044a579421bc81",
+    "src/failed-replies.php": "d25b0156f02a14c23b97db6447528c65eaa5e737b140bd36fe80e8aa46cc33c6"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-ai-alt-text",
+  "version": "0.0.64",
+  "repo": "DirigibleStudio/dirigible-ai-alt-text",
+  "tag": "0.0.64",
+  "commit": "9440ab04086bf05f0157a7fc4ec0d037a810c238",
+  "published_at": "2026-10-14T14:15:03Z",
+  "tree": "451e2105e2f17e03ad8368bde7eff5e4f8822360be0062dc282c0344a1cc5dfc",
+  "files": {
+    "dirigible-ai-alt-text.php": "e74dede56ac8e726283a24e7f657d7958f4602c0de576b17f21d17eea54fe486",
+    "dist/admin.css": "332fe98f54d7464b57f6a5ef340da091562f01ba8d7a5beb78d97da9420e8f20",
+    "dist/admin.js": "8cd8d750b28127de4e4a813662baf084ad087a71bdd904635f03379d09cc75a1",
+    "dist/arrows-rotate-solid-full.svg": "74da5872590f3f317c224ec00b1d6d6098178f79d8f8cb9624888bebb968c8e4",
+    "dist/config-accordion.js": "684af9e8e005ed46043fde24a4b11c66b69970b85cd48c6bb1bef8f187270590",
+    "dist/editor-excerpt.js": "02f45de3ecb4f2354a54260dbe99002c6d7bacde41167e89937623e457107e49",
+    "dist/editor-seo.js": "3e5493cc638e387c2cb27adfb40b441cbc7df0d063206fa2c7a3c8642b1d8cde",
+    "dist/excerpts.js": "f37053ac6ec34db557bd700bafd9ad977b00c478430555b9c41ad7a2e56c27ff",
+    "dist/featured-images.js": "265fe9d1c8b9130cabff1b2217b650e8109046916a5c7feaa0c95fc4310495f7",
+    "dist/focal-points.js": "e4f404f1d2cc2e8fe413c887128e5ee83005f7d89e7ac765b468695ebdfc334e",
+    "dist/grid-density.js": "d6b7bcc9a950fec12ff646c12f0d36c2dc482b712a966413b65c80213001afb0",
+    "dist/lock-solid-full.svg": "5b62f8b85ae033323a0da13ec3250bd185530bcb9069a307ec9b4413e162458e",
+    "dist/pen-to-square-solid-full.svg": "6d6c1a29c778ccc422d26002de766003180423cd576bc73c8d2083b86bae1433",
+    "dist/trash-solid-full.svg": "19dc46c1939e2a0bdc6a45d62776a0fe8d6b80990e36dc3f655758b72b4bbf47",
+    "dist/wand-magic-sparkles-solid-full.svg": "fa3313a4e8cb28c8c5b5de6f0bc9f09063f0d1f685d11e9b60a95ac390c75cb2",
+    "inc/licensing.php": "4ba0b2bcf07f6cadf0bdb1f052a1c0f383242e3c70e3a1bb81dfc2702175846d",
+    "src/DirigibleAIAltText.php": "26e595200a9802770aa099690a20a629fab7d41fbd41cb78757af9eccd5a575f",
+    "src/ajax.php": "e66378d073c46fbdf78d57718d1a80731e19432d9f763c2c6e3a6f12c58e4222",
+    "src/auto-alt.php": "31cbccb3c36fbc78965f3d15e6b2fc98dfc6adf7a6a727762783c79218988bc9",
+    "src/failed-replies.php": "d25b0156f02a14c23b97db6447528c65eaa5e737b140bd36fe80e8aa46cc33c6",
+    "src/models.php": "2c2296ffaf36fc970fa70382ff2f1be7bbfb99d514ee4b7ab22e5b06d42437c5"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "better-breeder-extended",
+  "version": "0.0.17",
+  "repo": "DirigibleStudio/better-breeder-extended",
+  "tag": "0.0.17",
+  "commit": "e7291f0176fc5e20891459e3dd3d6d79ec8e4551",
+  "published_at": "2026-09-30T05:16:02Z",
+  "tree": "f96624c11abe88bc2b364167b84d625fb65f5a107c2f2c5e59d705c8c5225473",
+  "files": {
+    "CHANGELOG.md": "d6ed39444fdc690c2cc741a40aafc335db5455a67a5678a809da6c144b788731",
+    "README.md": "f81461989c3915672f61b9049ec1108a7cc44237ab8001143255bf52e1fb068f",
+    "better-breeder-extended.php": "8d850f7bec78c68db238dce8a6ba1655c08306514f50896722e028248d273025",
+    "dist/form-preview.svg": "9b5566557ef8c81da9e9c941f158f31411097df8db486174163758961aa96afe",
+    "dist/view-min.js": "2d89a0912a0e053180956a2e92264ac421fcaf95be2afc10f896499eab894de3",
+    "inc/licensing.php": "23ea2f66a72694561c35ad4d849015f6f0d6ce88fadde571667e00d111156d62",
+    "src/BetterBreederExtended.php": "740cc3598186034fa4b53b2389f60e5d147e8af58e097370a0ab9c73160dcd77",
+    "src/gforms.php": "4a8a7e7e816c036d3914a86d57ff41c994a0b32cc34f88dc6e78a44aebdcce35",
+    "src/helpers.php": "a4ced1070a2efa2062a2f56b90e3b071337892f0401b1cfa968bf081818db39b",
+    "src/templates/parts/ancestor-lines-hor.php": "3e398784de5ad77b89cd08c1e15f62d185b21027acf108a048806f72feb3c12f",
+    "src/templates/parts/ancestor-lines.php": "6318e4cb1ffa0b5d02883091edf2e8afbf7313c1373aba1c6adf316f3ce4fddb",
+    "src/templates/parts/node-lines-bottom.php": "647fca014722c54eb0d83952e443f0cadb0bd901767b375efa70468d7c898872",
+    "src/templates/parts/node-lines-top.php": "77fc28ff4759ef754a208874264c4b8ceeee8c4828773657389debfac8d9ebb7",
+    "src/templates/single-pedigree.php": "0258c7c09480478756d935532124da5a0c537b862ec2462a8077b2a2270757cc",
+    "src/view.js": "c05ae099a17627a81a41a833d3c5b15c3c4ea5503fc167e661cb7718103a1278"
+  }
+}

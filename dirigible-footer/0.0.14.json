@@ -1,0 +1,20 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-footer",
+  "version": "0.0.14",
+  "repo": "DirigibleStudio/dirigible-footer",
+  "tag": "0.0.14",
+  "commit": "e9d825cb10724a46972f7c49798ccb45672810f3",
+  "published_at": "2026-09-30T02:42:27Z",
+  "tree": "451cd377585050c1e49128244eab73e73b6ed3e9cbd707a50310700b58e2405a",
+  "files": {
+    "CHANGELOG.md": "4aa4f28c811132efd3d706c917696b4de60389df6787713bf1d2b8b232836c84",
+    "README.md": "829098d5ddda49ee4e9bfd0c536b49ad2ccf2500872c5f68416fed99eb9c31a4",
+    "dirigible-footer.php": "4f0c1a3877fabf0f06e64929d62d9bc7b381afec4f88d347f628b78e45112600",
+    "inc/licensing.php": "4382adb004fb4fbe55fb7358a9f6bac774fefaf316fda0315fa389d749271cc0",
+    "src/DirigibleFooter.php": "af7af90156d343e19a71d5f5554cf665712f5d6b4c7eca7f87c24094cdf6bfbe",
+    "src/customizer.json": "01fe310e5b18a94b35488fefb372efa6c8d3f946cdb20811b73093a31cea1487",
+    "src/customizer/freeform-footer/entity.json": "1131ea36367a045e33056f6a6facbb455f837f5f3240ed2dcbb7ffc9a340ea0b",
+    "src/post-types/footer/entity.json": "4ac32b26e3e81edbf71f7fea9385a713d460642915d25887ad489c1d737ad4f0"
+  }
+}

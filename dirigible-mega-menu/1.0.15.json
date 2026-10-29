@@ -1,0 +1,20 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-mega-menu",
+  "version": "1.0.15",
+  "repo": "DirigibleStudio/dirigible-mega-menu",
+  "tag": "1.0.15",
+  "commit": "becf01a197608d80717b8b9a6274c8a3c305904c",
+  "published_at": "2025-01-14T21:24:17Z",
+  "tree": "12a7947ebda0bd896f451a0f10cb0e8ed2974fa5519a3827e09e5c644e039c3f",
+  "files": {
+    ".gitattributes": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+    ".gitignore": "a78b43fe81516fe8b9ba8e40cfdda94c0757db237dcdccc0c3a81d1ab5260d81",
+    "README.md": "6b5ec78f9195990218ad53c5b510275f4852af65732de6114445bc623f6c1f11",
+    "dirigible-mega-menu.php": "ffda412b575d9cefb4d1d5af7708eaa1ffd90e0a2e107625ce1c4d0661ea7085",
+    "dist/script.js": "f1b9a0c09aee512b0ac4768cde526f05d62f6917a0220af697822d1b2b43b0a2",
+    "inc/licensing.php": "d9af50990b0edc352e2c2ff524f9c1c50e17545aad519310b6049089e37c7973",
+    "src/DirigibleMegaMenu.php": "fa9ef6804256e1118799bcf1dea04da42d1d2463a9611ec4b3d72b42ad5b6244",
+    "src/customizer.json": "b392e41b849ab0d792646f1f265027fe6a1fe4af199866baac45f3d15b211141"
+  }
+}

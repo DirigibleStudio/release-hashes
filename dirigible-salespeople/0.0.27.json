@@ -1,0 +1,26 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-salespeople",
+  "version": "0.0.27",
+  "repo": "DirigibleStudio/dirigible-salespeople",
+  "tag": "0.0.27",
+  "commit": "a0ace3b64c487516b81b1db9ca728c13f504e56d",
+  "published_at": "2026-10-22T19:15:41Z",
+  "tree": "48402238fd5022ab8d16dc8b1edb8f6a5b6085a336b2c07c09c503a5c7563e1c",
+  "files": {
+    "dirigible-salespeople.php": "3b85e51a9d5e754db76c2b71085b143fac879989f0679e55aa4109c883caf1c6",
+    "inc/licensing.php": "4ba0b2bcf07f6cadf0bdb1f052a1c0f383242e3c70e3a1bb81dfc2702175846d",
+    "src/DirigibleSalespeople.php": "f52497f2dc4995be4a955a511331dfc64130ed912d8f12eebb74517c5ed015de",
+    "src/ajax.php": "008ffa7397079a988406789549bb8d5a439b2930680a11f6c94637cd88ba367a",
+    "src/blocks/blocks-manifest.php": "7274a944102a8c7e3864d92721b7b4d69d5620318493e54f73f2e0d0f987eebd",
+    "src/blocks/blocks.php": "5ae5439b6e65b251183550b9075239f0e085c82590e8ae253c159dfa8c660918",
+    "src/blocks/find-a-salesperson/block.json": "40112945239244d4495fae2023e98fa99ad41cb41dd4bf9b2ada1c3c16d0e799",
+    "src/blocks/find-a-salesperson/fields.php": "5b9ff30a5dec7cc70a25713aeae17468fd422adc3ebca49eadd4cf5cabd41b65",
+    "src/blocks/find-a-salesperson/render.php": "85f5a5a957a0748b966aa059ae242e094ec3f04dac075f0d37586a67ba08f8af",
+    "src/blocks/find-a-salesperson/view.js": "0240219e15d1d50e7ab1fed96e8a40443bbb1bd31124d37e8e664de25587de1b",
+    "src/helpers.php": "b0e050e890945fe2734a35d61b177224051749af954174b3572b7408cb64142f",
+    "src/import-export.php": "ad8818618e15bc4bbbdff062cee976f6d60418042069b8cde06f7d9cf81292b6",
+    "src/settings.json": "c440cca97607095b2a8e716736698a00c67cb1949efe4ff2ad09173249b06ece",
+    "src/templates/card.php": "ea0240782bade8ad6db7f048255465c4666874ccfe8e25489d946552f05d6372"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-hours",
+  "version": "1.0.22",
+  "repo": "DirigibleStudio/dirigible-hours",
+  "tag": "1.0.22",
+  "commit": "06261f95be3030ec3dacd8536bbf190fe34e6b4a",
+  "published_at": "2026-10-22T19:18:28Z",
+  "tree": "df3612a52af504745a4ed4604e3221270d6cf8268bb53aa51bd60e917f369352",
+  "files": {
+    "dirigible-hours.php": "aeb57447d8b0d5a8d00dc3ee3e5558a67a81eac2df10c0ab78d2159f39b3a8cb",
+    "inc/licensing.php": "4ba0b2bcf07f6cadf0bdb1f052a1c0f383242e3c70e3a1bb81dfc2702175846d",
+    "src/DirigibleHours.php": "f9294db8b739694323ae6578fb6ae08d160b44bd15a20dd542b4c0253a272a8e",
+    "src/admin/hours-page.css": "54e7536f031549b11445cfab4468a4ec1b78b9609ebd6c13d5f5ae835e20a875",
+    "src/admin/hours-page.js": "ca8e806f6b8d94b60bd10cbb6331b63cf758bba00fef266be1d9bc3b4e7bbda0",
+    "src/admin/hours-page.php": "89b704a4388081dae8d9db78da5d76c7bd477f51066398014a4b284f0aefce65",
+    "src/customizer.json": "b8e0098467ffa1bd9dda0cd4aa3e9e6ceeb81e55da06b14c8a533bf6a11339ba",
+    "src/customizer/settings/entity.json": "e1d1687be609084786f2102b707630c56439535f80c90b00e7a1a9ee90b5fa5f",
+    "src/hours-data.php": "808423d3a2681a25053e871dd2bd09dd0a04623938d3eac95d7f3fcdf8bd3502",
+    "src/jsonld/hours-schema.php": "b65ff918b2e6c752924b41af2eb94a62cfe5dd991e2a515051deffc72e6095cd",
+    "src/open-time.php": "6f3dd5e1de0aebcd3625140168985142349f12c28573fea112dc56aa0d8dfff1",
+    "src/settings-transfer.php": "7b6431daecd63b909d6202f6d136d96fda999fc0e9af3b116abfecc3847b09f5",
+    "src/templates/every-day.php": "e14e7c8da2421044980f79b13a5cd5120cdf18dd15ece9d288a28c8358a24b71",
+    "src/templates/hours-today.php": "4256d83ff7ccbcce0e84bba419c0b232b12c2a62c61a54db35108c919661f3c8",
+    "src/templates/inline-hours.php": "c484758c34aa53abb4c1f7c6861ba78c784b86d154a2d8b0a216b7e9cb93028d",
+    "src/templates/next-open.php": "cefcf7b2b25ae7ad5a725a5e66d7177d05837d55beca3ad96542a094762dd73a",
+    "src/templates/open-days.php": "cc4e544b006c6fb6a44b4cd256dd81d97576d667d55f79d661f41c74160308b9"
+  }
+}

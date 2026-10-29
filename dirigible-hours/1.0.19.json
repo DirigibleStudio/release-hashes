@@ -1,0 +1,28 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-hours",
+  "version": "1.0.19",
+  "repo": "DirigibleStudio/dirigible-hours",
+  "tag": "1.0.19",
+  "commit": "9c4ec80e547f4eae96da69082cd4fbea39ec627d",
+  "published_at": "2026-10-13T19:20:48Z",
+  "tree": "1270e6f68fb4dd5fc12e860be03281a5e93a2fb594fa68671b55477e05afb3f8",
+  "files": {
+    "dirigible-hours.php": "97860eb960436fb75537571e8f181c8581e1ff1241641257624e098c43c0be4a",
+    "inc/licensing.php": "4ba0b2bcf07f6cadf0bdb1f052a1c0f383242e3c70e3a1bb81dfc2702175846d",
+    "src/DirigibleHours.php": "b5a4024d2e3f7c689515521c2c8c88128a6b41dd6b97f02a1032d5e8f4ffdb17",
+    "src/admin/hours-page.css": "54e7536f031549b11445cfab4468a4ec1b78b9609ebd6c13d5f5ae835e20a875",
+    "src/admin/hours-page.js": "51519125f42334208c37f884304592ef1410ed018f38a35823503f753fe71aaa",
+    "src/admin/hours-page.php": "f9e20f19f7d67382d36f1b2977c752f5adbf31aeb122ee60359c2029ba8bca40",
+    "src/customizer.json": "b8e0098467ffa1bd9dda0cd4aa3e9e6ceeb81e55da06b14c8a533bf6a11339ba",
+    "src/customizer/settings/entity.json": "e1d1687be609084786f2102b707630c56439535f80c90b00e7a1a9ee90b5fa5f",
+    "src/hours-data.php": "8e1e0866827fe4575ace262801fb5bddf6e9f1eb106847d33105dbf71ae5d36e",
+    "src/jsonld/hours-schema.php": "5dbd384dbf5e412f35cb409e396e1540c1b746a333d87887568f1aacb515e305",
+    "src/open-time.php": "6f3dd5e1de0aebcd3625140168985142349f12c28573fea112dc56aa0d8dfff1",
+    "src/templates/every-day.php": "e14e7c8da2421044980f79b13a5cd5120cdf18dd15ece9d288a28c8358a24b71",
+    "src/templates/hours-today.php": "4256d83ff7ccbcce0e84bba419c0b232b12c2a62c61a54db35108c919661f3c8",
+    "src/templates/inline-hours.php": "c484758c34aa53abb4c1f7c6861ba78c784b86d154a2d8b0a216b7e9cb93028d",
+    "src/templates/next-open.php": "cefcf7b2b25ae7ad5a725a5e66d7177d05837d55beca3ad96542a094762dd73a",
+    "src/templates/open-days.php": "cc4e544b006c6fb6a44b4cd256dd81d97576d667d55f79d661f41c74160308b9"
+  }
+}

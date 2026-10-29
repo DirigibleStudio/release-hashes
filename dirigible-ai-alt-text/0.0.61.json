@@ -1,0 +1,31 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-ai-alt-text",
+  "version": "0.0.61",
+  "repo": "DirigibleStudio/dirigible-ai-alt-text",
+  "tag": "0.0.61",
+  "commit": "3a359f6813c0d27a5a10c439b16b5d2c185b386b",
+  "published_at": "2026-10-01T15:03:55Z",
+  "tree": "9824618cdbf133366224b6c249e778e27c87a18693ff5a2d5fec4b740deeb618",
+  "files": {
+    "dirigible-ai-alt-text.php": "0cc011a76c3923c4398c87fd3698849545fcafb1e1b524f2794fcdc976528475",
+    "dist/admin.css": "40de5abc1779ce177af2ce4fddfadf0a97556597ca6f4609d60e14ec41d7c519",
+    "dist/admin.js": "2de5caa5fae71ba543a9f78d22f27e914e4aeffa4ba27abae0b79539890b0d5b",
+    "dist/arrows-rotate-solid-full.svg": "74da5872590f3f317c224ec00b1d6d6098178f79d8f8cb9624888bebb968c8e4",
+    "dist/config-accordion.js": "684af9e8e005ed46043fde24a4b11c66b69970b85cd48c6bb1bef8f187270590",
+    "dist/editor-excerpt.js": "02f45de3ecb4f2354a54260dbe99002c6d7bacde41167e89937623e457107e49",
+    "dist/editor-seo.js": "3e5493cc638e387c2cb27adfb40b441cbc7df0d063206fa2c7a3c8642b1d8cde",
+    "dist/excerpts.js": "59f74bd6e198aa9afe414810585b246c781955ce30b5ce3f8c164d32e7da52b3",
+    "dist/featured-images.js": "4806d0d4e8be8dd761bb5843aace70b9dd90c3ba5da7a6aa56e49f842aa92dc2",
+    "dist/focal-points.js": "c649611b43e65a2711510d722ea5020e5906d7242de3ff1b198d01e4ae8a38b5",
+    "dist/grid-density.js": "d6b7bcc9a950fec12ff646c12f0d36c2dc482b712a966413b65c80213001afb0",
+    "dist/lock-solid-full.svg": "5b62f8b85ae033323a0da13ec3250bd185530bcb9069a307ec9b4413e162458e",
+    "dist/pen-to-square-solid-full.svg": "6d6c1a29c778ccc422d26002de766003180423cd576bc73c8d2083b86bae1433",
+    "dist/trash-solid-full.svg": "19dc46c1939e2a0bdc6a45d62776a0fe8d6b80990e36dc3f655758b72b4bbf47",
+    "dist/wand-magic-sparkles-solid-full.svg": "fa3313a4e8cb28c8c5b5de6f0bc9f09063f0d1f685d11e9b60a95ac390c75cb2",
+    "inc/licensing.php": "4ba0b2bcf07f6cadf0bdb1f052a1c0f383242e3c70e3a1bb81dfc2702175846d",
+    "src/DirigibleAIAltText.php": "dee5fbb3e4a62884192c4c34ed081afce10ab32a870aa334307effb2e4062097",
+    "src/ajax.php": "2bbc620bf98fc20d600de3f457e90720c97e0fcfde69cedb5ea1a1d775803c9d",
+    "src/auto-alt.php": "d8af6b0a186aeb3cb19cde6ccd65f8f6f2cfe64e22f8a59268d2de920342bef7"
+  }
+}

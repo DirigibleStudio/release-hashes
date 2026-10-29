@@ -1,0 +1,32 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "nimblocks",
+  "version": "1.0.3",
+  "repo": "DirigibleStudio/nimblocks",
+  "tag": "1.0.3",
+  "commit": "51c8dfb0f9c4425de15c891b920ffde3fc4874fd",
+  "published_at": "2025-02-03T21:48:06Z",
+  "tree": "88c3a240e779a41bc374f176623af3433e4c4497e73c9b9879e201c30c54764d",
+  "files": {
+    ".gitattributes": "e3ea0ea58caf98554cc096549022ee74932c7098b5556eb3ae8f38d33ac5c1fc",
+    ".gitignore": "1d9fdf68b4bff6c690d2394f6fee93825cb518a902e7acdcfb11a000f8a3727f",
+    "build/nim-title/block.json": "cf7070a133390a37809a9ff870106fd5c33eb8911a0b3c828fc6d25cc39f87c4",
+    "build/nim-title/index.asset.php": "3314b002d72e5013b43b55281410caf33213c29c0def9fac8a0a1d477fae45b5",
+    "build/nim-title/index.js": "7d851178938d01ac70452b8b013609bc6e647bc9d1703002c8b1c231aebc6ee1",
+    "build/nim-title/style-index-rtl.css": "09acb092f3eb81feef52290ee112651c73f9aff13b068eec37ff9960cc9a1054",
+    "build/nim-title/style-index.css": "9637cb608fc88d78f386deca3f1e44f5acd4ea24a61380614d6497de9a787e88",
+    "inc/licensing.php": "682d0c56aafe1786c6e22559c7cfb08afd86f437d9ec9d4a4bcc6724b5b7d99c",
+    "nimblocks.php": "61b20ba4295db2872b604ad39a92ed362729e31bff5936e16673fe7a288fd644",
+    "package-lock.json": "8ee8d2e37a2427426aeff8faa2ba74184e7b3381f600b0092032053616d94b5c",
+    "package.json": "7d96f9f7adfcd69d2a490bd0880b8986bfaada4eac4f29a684faa32529603c75",
+    "public/nim-animate.js": "a6b84deb1c8a6106a38df5b19079ef879067f446f3ae84662c23658f39fe4222",
+    "src/NimBlocks.php": "00538219fab2a5494bc674505dea2402e2cb7775cd63b69919284b567a51c188",
+    "src/blocks/nim-title/block.json": "98729bc33d807d1099ae43f7d43e19be2e7b88b0fba522652131d9116fafa552",
+    "src/blocks/nim-title/deprecated.js": "3098db8924c4d0688f8a8994b54a4ff515f666b2403be675f1af5fa9be4e62f2",
+    "src/blocks/nim-title/edit.js": "a89adcaf398c528b40bf4bb3ba2f71f34155b90f152626d1f07022e616701000",
+    "src/blocks/nim-title/index.js": "3d6b5b75f58cb28b0f70b5b345b8f7ee87e0275847c128feecffdbf5e8b4b8a5",
+    "src/blocks/nim-title/inspector.js": "b68b92fa888e95b756e3cb8e18b2f4d81f6c72642d8583edb19292e32952c879",
+    "src/blocks/nim-title/save.js": "86514388843279a73bd3eeb8c13f50143479e741f39eba711be366ceb6d19847",
+    "src/blocks/nim-title/style.scss": "5eceb87f6fe095575255f424c9c15d91af6f25e668f20013080d2dd19a1e9616"
+  }
+}

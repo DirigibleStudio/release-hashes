@@ -1,0 +1,29 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "better-breeder-extended",
+  "version": "0.0.15",
+  "repo": "DirigibleStudio/better-breeder-extended",
+  "tag": "0.0.15",
+  "commit": "2c80c39abb7c378efb262cc8eb7e7b0b5e689daa",
+  "published_at": "2026-09-08T19:45:14Z",
+  "tree": "dbf4dd534ed002e61e765697de6326074c9f6df0d629fc3c826be4ab17af70a5",
+  "files": {
+    ".gitattributes": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+    ".gitignore": "9bf9284209c8733b6e9eea8d187130fcbd9e1ee8f010be59543ea03d10320f4b",
+    "README.html": "80cb1556e8b4a6a3004a551e2dfd11cf90bca5c0b41d9e848b886069bf575eb0",
+    "README.md": "f81461989c3915672f61b9049ec1108a7cc44237ab8001143255bf52e1fb068f",
+    "better-breeder-extended.php": "677b6fe160072773340b2e00748957d79218f6bfe99950fc1de8e9ae330c0990",
+    "dist/form-preview.svg": "9b5566557ef8c81da9e9c941f158f31411097df8db486174163758961aa96afe",
+    "dist/view-min.js": "2d89a0912a0e053180956a2e92264ac421fcaf95be2afc10f896499eab894de3",
+    "inc/licensing.php": "4382adb004fb4fbe55fb7358a9f6bac774fefaf316fda0315fa389d749271cc0",
+    "src/BetterBreederExtended.php": "153731ed24716a2f9134c9e9fc40cc8e02caaff60a1223e07040d569505d1c2e",
+    "src/gforms.php": "2014c8674a86c8121df0a91e4fa5ee073675c3c8e33ee05fb4ee7526b3d91152",
+    "src/helpers.php": "fa2dcf777a2cab3a1e9bfc2358606d0638786f9837fc4ac9d36130df1d854458",
+    "src/templates/parts/ancestor-lines-hor.php": "c8e565ba00731fb0b863bf0990a295c928726b818728099a6ce639f145922b86",
+    "src/templates/parts/ancestor-lines.php": "3824abd00252c0dc316f0737d233133684464e650d5fd839add19b46d376cf4f",
+    "src/templates/parts/node-lines-bottom.php": "b9fc3107dbb5778984c8868d0c243a59cfcfdb54c2becf15427d16e4aee40796",
+    "src/templates/parts/node-lines-top.php": "00158469db852e76a6738d55666224360a4522a61198620d51dc4a2c4df0b454",
+    "src/templates/single-pedigree.php": "22cb9d4e210a34ccfda815099c1732c50afe700936c41ecf8b6e0c38803f3a9d",
+    "src/view.js": "c05ae099a17627a81a41a833d3c5b15c3c4ea5503fc167e661cb7718103a1278"
+  }
+}

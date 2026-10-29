@@ -1,0 +1,19 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-footer",
+  "version": "0.0.10",
+  "repo": "DirigibleStudio/dirigible-footer",
+  "tag": "0.0.10",
+  "commit": "e9ee0500cc0515a25558cc874eecfdffc9947f2e",
+  "published_at": "2026-09-08T19:57:07Z",
+  "tree": "eeb08934f693fe899af8cc29fec154fde6352a509c12d089db95e02fc92a766b",
+  "files": {
+    ".gitattributes": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+    ".gitignore": "1d9fdf68b4bff6c690d2394f6fee93825cb518a902e7acdcfb11a000f8a3727f",
+    "README.md": "829098d5ddda49ee4e9bfd0c536b49ad2ccf2500872c5f68416fed99eb9c31a4",
+    "dirigible-footer.php": "73d545be1f82225b382a40b4fc06f91de7305e477b4a676f442f12fb98a27b00",
+    "inc/licensing.php": "4382adb004fb4fbe55fb7358a9f6bac774fefaf316fda0315fa389d749271cc0",
+    "src/DirigibleFooter.php": "00393147d9c043e7b127f6ad7e657383a9e832576ffef42a10c39e70fbcd0b37",
+    "src/customizer.json": "01fe310e5b18a94b35488fefb372efa6c8d3f946cdb20811b73093a31cea1487"
+  }
+}

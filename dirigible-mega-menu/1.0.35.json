@@ -1,0 +1,20 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-mega-menu",
+  "version": "1.0.35",
+  "repo": "DirigibleStudio/dirigible-mega-menu",
+  "tag": "1.0.35",
+  "commit": "182144f97cd437771dc41ecb95bbb6737eeab5b2",
+  "published_at": "2026-10-01T06:06:41Z",
+  "tree": "d8ee2e8886fb46355b2015e3a95a128da2e216813dd5adca3d1fb950cafe079d",
+  "files": {
+    "dirigible-mega-menu.php": "5acc4786f331474529e1e4a045f2ef1ebcdbab95c58face66e9ee827e7fbd869",
+    "dist/script-min.js": "b183d81284af98a362062ed14e64f64738c66e7264a9fce0cccaaba00d812eb8",
+    "dist/script.js": "3a40bf534026d683d6232005c8c06d2a2aa173c918f447f265b951c0944529cd",
+    "inc/licensing.php": "4ba0b2bcf07f6cadf0bdb1f052a1c0f383242e3c70e3a1bb81dfc2702175846d",
+    "src/DirigibleMegaMenu.php": "2b76f05af0f7d7070b5b8cc9a16ed93ffe3d1632b7b6c3b5b30a115dded54bea",
+    "src/customizer.json": "96b01175dc2943b78c8f6df36c7c9e01650a707378bb0297d1b8d715d4339af5",
+    "src/customizer/settings/entity.json": "1bab62734b13bb21d21fb885895276ddbb118c14ae6252835ff03eee472522b6",
+    "src/post-types/mega-menu/entity.json": "dc33131e12a6df7a8cb2e33c043d1d8cc2f587af1fa86fdce857a6dfa84f0be7"
+  }
+}

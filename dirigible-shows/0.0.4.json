@@ -1,0 +1,30 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-shows",
+  "version": "0.0.4",
+  "repo": "DirigibleStudio/dirigible-shows",
+  "tag": "0.0.4",
+  "commit": "e0a15a8ff35bbe535dcadd80bab65515b9871ea5",
+  "published_at": "2026-10-21T20:21:34Z",
+  "tree": "a62e838b91d86a0215259584414443bc47deafd8925a1d996aba48a29c0ed4aa",
+  "files": {
+    "build/blocks-manifest.php": "16caf1f5255a59f57d7c3e59b03352210efedba422c58ce5724e9e9966bd0855",
+    "build/shows/block.json": "70509e64ecbbb97ae78ba1f65199002db969becb3229ad99f0fa9b3daddf3ede",
+    "build/shows/index.asset.php": "1ed158077356edff2c69296978dee40b7bd10ba0f395b6ea9b488839c3c6462c",
+    "build/shows/index.js": "3b87f62614c9c42e92570cf94e6889d624958a6dfafa94276a2f4ad33bff9e3b",
+    "build/shows/render.php": "97612bf608c06f24db35cf44e0c4da4e236d1c8ff06ff4ec2cf1dacf77fdf847",
+    "build/shows/style.css": "940001dae5bf153468d3ca6c626e95e01c88ad7f81a90e4c8c9394b944311aef",
+    "dirigible-shows.php": "847b0641bdf45b0b101b5eadee30e11f68f3a753492ac0f1ddfcbf27972e41dd",
+    "inc/licensing.php": "4ba0b2bcf07f6cadf0bdb1f052a1c0f383242e3c70e3a1bb81dfc2702175846d",
+    "src/DirigibleShows.php": "50c48d4baa86eb8fb0805d3e7876d8e1145888adcf6af75c5de6980ce29b63d4",
+    "src/admin/import-events.php": "87c1bbee07deafeb72bdbab92967cd6f5bdbe6861a9be269e38d6e0d87c6121d",
+    "src/admin/shows-page.css": "09d96a431406352b6b9e74e605a940bb4982d0bd17cc0329ddda350ff87a410f",
+    "src/admin/shows-page.js": "d43ce499adb09def75b46778c9f3fb9eb739b42e3a403a3ee41d873949bb01c8",
+    "src/admin/shows-page.php": "6233c95afd647e91195af281d4b4819bb18b285ac6ef1218701f0b4ede1ba04a",
+    "src/admin/transfer.php": "ebfd38b8d955d32d22f7ed5f6ac6241e2b2566f335acfed59a17274fbf3f620a",
+    "src/jsonld/shows-schema.php": "af8c3429d5e362c5136b819a83357bca5c83cf85fc9129842565d4a6a5c2fe7f",
+    "src/redirects.php": "6ae65d04e63696dcc359f456e7cfcd03bc61c92c5fb8af4cd24ce39a78eaffd0",
+    "src/shows-data.php": "45d66131a5ecd5d8cea4b35ad431fd53348cc56fd652d814f605561693169b01",
+    "src/shows-render.php": "a77834ed774ae3d93017be016d7be914923329455364f3585e843c8438cac70f"
+  }
+}

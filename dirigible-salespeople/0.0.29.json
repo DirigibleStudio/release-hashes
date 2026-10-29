@@ -1,0 +1,31 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-salespeople",
+  "version": "0.0.29",
+  "repo": "DirigibleStudio/dirigible-salespeople",
+  "tag": "0.0.29",
+  "commit": "b9c0f82401904b4b5f206f8a5ef09b80a2df7b35",
+  "published_at": "2026-10-23T03:52:34Z",
+  "tree": "5453d106556512c193c5f33530437eb72b450b203ad71bf5281016eaf8d21546",
+  "files": {
+    "build/editor/index.asset.php": "98c4f867fd3052b0142bd078c67584244aaedc328e9e70cb40526542846ac9ef",
+    "build/editor/index.js": "86158910d88ce09c101f5ac8a24de4080b524b9a40c67b64eb7138ce77a454d9",
+    "dirigible-salespeople.php": "b7b7a16998be20048c6eddc7263467bdb821506a4929eacec388997f9e53c781",
+    "inc/ds-acf-data.php": "2f3855ff963aef1e548c6fc5f75be0f8b6aeb5111134d3ddcd7301a124e8b545",
+    "inc/licensing.php": "4ba0b2bcf07f6cadf0bdb1f052a1c0f383242e3c70e3a1bb81dfc2702175846d",
+    "src/DirigibleSalespeople.php": "bf46a46960ec822b1d25408a11e5a36178ea879b8b295789658c264ef91d7499",
+    "src/ajax.php": "e85437c4b0769a242396c7699f7155236a515b13aa3d993efef2b310e566ab36",
+    "src/blocks/blocks-manifest.php": "138956342667cc462ae686410460a4335a63e227b903aeb54d91ba5fce5333c1",
+    "src/blocks/find-a-salesperson/block.json": "d254a610677f63b43a45682e1068bebe6f9bc3127d5b5440fae352199bfaf65f",
+    "src/blocks/find-a-salesperson/fields.php": "443c7fdfd7929d644d776f99004a05e20426766f5b7c51ac70dcf6d54df849fa",
+    "src/blocks/find-a-salesperson/render.php": "492c1841f5822d95df69399485ac73660347fde028f2529dcce531da67c5082f",
+    "src/blocks/find-a-salesperson/view.js": "0240219e15d1d50e7ab1fed96e8a40443bbb1bd31124d37e8e664de25587de1b",
+    "src/fields.php": "6c1fb0035e7d2b65e943ded4f453fa58fe37bccaf8e6e2447462aff9c1c6d792",
+    "src/fields/salesperson.php": "f955f5164484b4a82c6de31cb585167e7d4c26242a65be0d594ee3d35978c51c",
+    "src/helpers.php": "b0e050e890945fe2734a35d61b177224051749af954174b3572b7408cb64142f",
+    "src/import-export.php": "ad8818618e15bc4bbbdff062cee976f6d60418042069b8cde06f7d9cf81292b6",
+    "src/settings.json": "c440cca97607095b2a8e716736698a00c67cb1949efe4ff2ad09173249b06ece",
+    "src/templates/card.php": "ea0240782bade8ad6db7f048255465c4666874ccfe8e25489d946552f05d6372",
+    "src/zipcodes.php": "1639434c769cfd5df518e00f8be37c2407219024d9cefe5679aac007469c18b8"
+  }
+}

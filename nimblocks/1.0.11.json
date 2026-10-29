@@ -1,0 +1,22 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "nimblocks",
+  "version": "1.0.11",
+  "repo": "DirigibleStudio/nimblocks",
+  "tag": "1.0.11",
+  "commit": "789c0e9cc70dabb44e343cc22803839b337ee510",
+  "published_at": "2026-10-01T22:06:10Z",
+  "tree": "fcf3c543bba2cf841e3eb1fe93ab4554a3a2a08f9fd38f0499d139c38b6b5a9b",
+  "files": {
+    "build/blocks-manifest.php": "d6290b5d26461dac7d39111058de09af0e475659a6d64e9874002906743f9bda",
+    "build/nim-title/block.json": "b71bd3e7a2c98205d1c53c66e7bb45ea8099d05477251a2d81a4d060564b4c06",
+    "build/nim-title/index.asset.php": "1353cf38b53d28d0f52bd096b373a95bf5fe8ccaf76a50bb6248aa4676814ca6",
+    "build/nim-title/index.js": "a7e193d10c9f968e96d6580ca7c62b590253c05e48f83de964f63c7892e6c869",
+    "build/nim-title/style-index.css": "9637cb608fc88d78f386deca3f1e44f5acd4ea24a61380614d6497de9a787e88",
+    "build/nim-title/view.asset.php": "ed78affd3fb8fb617f8c4a2126e2c1186116c1fc1b29ffefbd764a9fda8e4b83",
+    "build/nim-title/view.js": "688379f6f8fd967363bc2e59a31f921d78f46d7023e3a245862af20a73630cff",
+    "inc/licensing.php": "4ba0b2bcf07f6cadf0bdb1f052a1c0f383242e3c70e3a1bb81dfc2702175846d",
+    "nimblocks.php": "417f4581ff04b7f9a54650c7e71bffee480168806385e6c16a934b99ce1c7233",
+    "src/NimBlocks.php": "1fd6d22b9e86661b08e78e3b098e7cd75851fa67a3f4f8847a413d6c7c553d2b"
+  }
+}
