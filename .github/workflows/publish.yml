@@ -1,8 +1,11 @@
 name: Publish release hashes
 
 on:
+  # Releases start this workflow themselves (commander/hashes-publish.sh); the
+  # schedule is only the backup. Hourly, not every 5 minutes: each run is
+  # billed as a full Actions minute (2026-10-30, minutes ran out org-wide).
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
     inputs:
       repo:
