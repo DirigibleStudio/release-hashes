@@ -9,8 +9,7 @@ it, and re-check their installed copies in the site report.
 - `products.json`: the repositories watched, each with its install slug.
 - `bin/hash-release`: the hashing script.
 - `bin/publish`: finds releases without a hash file and writes them (run by
-  `.github/workflows/publish.yml` when a release starts it, hourly as a
-  backup, or by hand).
+  `.github/workflows/publish.yml` every 5 minutes, or by hand).
 
 ## The hash spec (`dirigible-hashes-v1`)
 
