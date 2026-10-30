@@ -1,0 +1,17 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-footer",
+  "version": "0.0.21",
+  "repo": "DirigibleStudio/dirigible-footer",
+  "tag": "0.0.21",
+  "commit": "a5efed1720cd1decceba17c35f9ddf0bbcad1d65",
+  "published_at": "2026-10-30T22:11:37Z",
+  "tree": "34b08d763f66bb9dbc9d09484818b451536477587cfa6a717d5c9656a902a853",
+  "files": {
+    "dirigible-footer.php": "9c9bde585483e64a354514c9c9e719fc243e35edf84e7bc3fb20123b94f0f861",
+    "src/DirigibleFooter.php": "c72842c8cf6249aa12b11dbcd83caae92c11b62313a5f27655feada267d2fede",
+    "src/customizer.json": "e428066358778d237b539e41ab871de3683501764e79c452f86ab90d7f838a7f",
+    "src/customizer/freeform-footer/entity.json": "1131ea36367a045e33056f6a6facbb455f837f5f3240ed2dcbb7ffc9a340ea0b",
+    "src/post-types/footer/entity.json": "4ac32b26e3e81edbf71f7fea9385a713d460642915d25887ad489c1d737ad4f0"
+  }
+}
