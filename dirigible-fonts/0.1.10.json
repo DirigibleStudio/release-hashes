@@ -1,0 +1,25 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-fonts",
+  "version": "0.1.10",
+  "repo": "DirigibleStudio/dirigible-fonts",
+  "tag": "0.1.10",
+  "commit": "19d0db0d5a349cb1b225882dee7d3a6b8f7a2edf",
+  "published_at": "2026-10-31T15:47:26Z",
+  "tree": "cf665be19515c56ee2b69daff88183f032ddbe2778023114788241afe23f7d3a",
+  "files": {
+    "build/fonts-admin.css": "13bc27d01e0ea0881cf958d88fe5698522ef27c699cb0036ff0a34050b2d9f5e",
+    "dirigible-fonts.php": "700f482ca63a5bea358d85d1b874cd42ca7d4fe02eea75e7ac5ed9dbefad4523",
+    "src/DirigibleFonts.php": "026dfa80e08e8bb8bc70a99d90447ac4888efe4be328d962fa74373a47d70a57",
+    "src/DirigibleFontsCatalog.php": "91d38ff8b601f1acbae5116cad0c33ea83efccbb25c143f10ceda28e45b8f596",
+    "src/DirigibleFontsHost.php": "06e1ed2df0eec8738b6050a41d5f53e32ba4f59f9fcbed3bfaaed9a5ed7a44cb",
+    "src/api.php": "5d89d83fb3725f459c0ba8e6278a63a534f87e8d179791c1276ff709b489287f",
+    "src/catalog/catalog.json": "4809e310ce60e7cd00aeed9ab31c8e98c523b1664e845e2de6250a3472555b42",
+    "src/catalog/families.json": "589cdd069cdc3c8afc03c8bcc4680a6143a318e9270f24cd8f1937d8ba101d5f",
+    "src/pages/fonts.php": "6ce5527ff286cfe1aed8a177635e0f08420854aaa5f449f92e7a2ee4ee5e4b44",
+    "src/pages/parts/active.php": "3d659e2543b0c81fe9553f9fa0ba30be44d6810229ece4ae42c63a6e6b703054",
+    "src/pages/parts/font-weights.php": "3f6d1b64fde0da10185673108d28cde2e0a860ed78c15b15a62f0c5f0f9911f2",
+    "src/pages/parts/font.php": "fb21abe6839043e91bfca448956f13b794c37fa6c59f1fe74152a799e60d948b",
+    "src/scripts/ds-fonts.js": "59f959a61fd29e295ecae4898af16ac588400d37583698914ebca40d0ce00955"
+  }
+}
