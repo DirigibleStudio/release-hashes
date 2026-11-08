@@ -1,0 +1,18 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-footer",
+  "version": "0.0.23",
+  "repo": "DirigibleStudio/dirigible-footer",
+  "tag": "0.0.23",
+  "commit": "ab5d85a9ecfda663ab822fbfa16d421c9d57a798",
+  "published_at": "2026-11-08T20:14:20Z",
+  "tree": "922a78f10d2733b9a76e1af94079460e3f90538118a69ba3a179babd0c8f42b0",
+  "files": {
+    "dirigible-footer.php": "f7558d91b89bc640a49e409d6247b9b1ccd9b2291151797db14577050dfc4184",
+    "icon.svg": "600c5c99062daf8b9386b99db4847529360e3f6d2b726bd7b596f61bee5d918a",
+    "src/DirigibleFooter.php": "f831e12752c2f567b6ebe215b0c106502c147f90ffe047e13d4a1d39353cc8db",
+    "src/customizer.json": "e428066358778d237b539e41ab871de3683501764e79c452f86ab90d7f838a7f",
+    "src/customizer/freeform-footer/entity.json": "1131ea36367a045e33056f6a6facbb455f837f5f3240ed2dcbb7ffc9a340ea0b",
+    "src/post-types/footer/entity.json": "4ac32b26e3e81edbf71f7fea9385a713d460642915d25887ad489c1d737ad4f0"
+  }
+}
