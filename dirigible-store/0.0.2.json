@@ -1,0 +1,31 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-store",
+  "version": "0.0.2",
+  "repo": "DirigibleStudio/dirigible-store",
+  "tag": "0.0.2",
+  "commit": "8773ae72afd64b6e6a581dc24e64ef7e334b1190",
+  "published_at": "2026-11-10T17:38:27Z",
+  "tree": "4fa6891c0779880ddc69e2a4971776a8c33770e30737ff69cd4249e6d099f999",
+  "files": {
+    "dirigible-store.php": "fe9d4aa777badcb99dcf0455310247d42f0d580edb1ae3b60df8097b543537b3",
+    "icon.svg": "10d23c11bbde71e969298d2250902f799758b5c2e463f47250bdfd01b4675d6b",
+    "src/DirigibleStore.php": "8e7709cc8d8e844c8c4dd59192c4924dcda71b31f2b581e265dc104ff28b7eda",
+    "src/admin/field-builder.css": "bbb834bd721b60b181b946e92c2f981fc559b28327497cbd1c5d7a40aacbca37",
+    "src/admin/field-builder.js": "f62848ce32510dc1fd7d80f7ecd9dad7869a6531e5670ffbbda0b23211c84f02",
+    "src/admin/field-builder.php": "33a8563f479a5452801b8036fbb97d4ba366e2bd3a45aa0d903a78ee88557498",
+    "src/admin/theme-notice.php": "a9548cac9b2c89544514c206aa165860a5fb3daff3578d6e205e5bffbdd6f7a2",
+    "src/checkout-fields/admin.php": "5a52dfe16394e287bffe082a0b3a1a5d63431fd6277accf7e9194830c36a1a56",
+    "src/checkout-fields/display.php": "278a3e5eb95a41bd7291671145453db9d91df9cdd02d214d179ac20a49ad42e9",
+    "src/checkout-fields/fields.php": "b62dd240d31df973a96a2e47efb0fbe068890e683ab712b9c124a8634c777720",
+    "src/helpers.php": "f73b5baff4e41dcea325b25cb2e26ce0072ae7734beb8aa73dc5fb9788a07bc1",
+    "src/orders/admin.php": "444bfac043babdbf8ca9ddd8e5612c59a2b640db8fcbe6c6665c7f10cafee0e6",
+    "src/orders/export.php": "59ae093fabf3990ac632cabc5cdb7fdaceecdf6b9123758a2434c8dfd4164b82",
+    "src/product-fields/addons.php": "429f013ed769948fe7f4377c154ff6e6ddbb252085983030e0196bb3faf937d7",
+    "src/product-fields/admin.php": "02a129e472a7c371655286f05e53abfd0490f686562989e8477680f8d61cbe97",
+    "src/swatches/admin.php": "b16c36006861086d28ed648a282be3870e2ffc4251635f2f1598a50ed77c3d7e",
+    "src/swatches/swatches.css": "16db995f81ed51350fea22bc5c8668ad6ef8be8b65b28797dc6c0b90a15825e6",
+    "src/swatches/swatches.js": "6211c9056cf62cbaa388bef93f7ff254ce3af00ac26320ba4a5abb52c3ab26f6",
+    "src/swatches/swatches.php": "ce129148a56bfb2c38242d784ec6cfff76148f0adb1b1a850ddd6c5764868ea5"
+  }
+}
