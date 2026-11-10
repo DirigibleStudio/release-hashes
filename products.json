@@ -212,6 +212,12 @@
       "main": "dirigible-social-relay.php"
     },
     {
+      "repo": "dirigible-store",
+      "slug": "dirigible-store",
+      "type": "plugin",
+      "main": "dirigible-store.php"
+    },
+    {
       "repo": "dirigible-studio-5",
       "slug": "dirigible",
       "type": "theme",
