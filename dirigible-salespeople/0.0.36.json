@@ -1,0 +1,32 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-salespeople",
+  "version": "0.0.36",
+  "repo": "DirigibleStudio/dirigible-salespeople",
+  "tag": "0.0.36",
+  "commit": "f0cf9c7d8f375925cfacd4d6d7b990062f9f99d1",
+  "published_at": "2026-11-12T16:05:59Z",
+  "tree": "a04a91c81652e2a5b0bf08bac7d7b066cfa0bb5630f6e51e91fbe0462d2ee085",
+  "files": {
+    "build/editor/index.asset.php": "c5e34567e9f3a2fd8675bfac391d8f387b597c4936ce39044c00a8d656205240",
+    "build/editor/index.js": "05ecc0331cc7a9a754ca7b95bbe6434a6326ec5f8f1e0e657a0087f7a1d170f4",
+    "dirigible-salespeople.php": "80a0025aae81dff8cdad5b2065debf5e2bdc5e2cc839f6ad5c1c4ce6c8531e88",
+    "icon.svg": "f90a39cde8504ad632d22704c3ab77c7549f7964d0cbbf347256f26e7ea16248",
+    "src/DirigibleSalespeople.php": "27e4edc0cd3e3fc39f3260cd979f3c932b2be91b198eb24bebe6bb698141d1ac",
+    "src/ajax.php": "ec6e442fedfcf3cc70c48ff2fc5d731b258ac19649745984a2e378ecd96b864b",
+    "src/blocks/blocks-manifest.php": "ac45b716065362b753540bfc6cc6217d4e7222bf8faa813ac554090104545480",
+    "src/blocks/find-a-salesperson/block.json": "3ebdb434620109548dc6eb66ca1a47ed77afd716926fde797bb4979696cdbe39",
+    "src/blocks/find-a-salesperson/fields.php": "958b832c97d42633f046f24a508a81a46aa6fcd4be29b704a0748234997770c2",
+    "src/blocks/find-a-salesperson/render.php": "c4a7f715b09039f87765e8e5487f5d215d66852b0c92cf3b3e919edaa404022b",
+    "src/blocks/find-a-salesperson/view.js": "98d45f7fa160e89773f0ef6670aa9ae33bc5ffdbd0ab70097b54b4da3dc7e833",
+    "src/fields.php": "2f0ace17b0318f3740827624c759f1956bb8207d379ba18ae58a18f904bd68a8",
+    "src/fields/salesperson.php": "b7de1115726c801ae93e8ad20bc6f34dc6620bf1afc6e5e2d045a870ee5c67fe",
+    "src/gravity-forms.php": "a1eae7b6bebd1d8c1bda4db7a610e0fe7c3ef90dd80a7bc83cee54db43f851fd",
+    "src/helpers.php": "9e85529e407e7798edcbfd64335c0881a0db1a804fae4f3dab52812584a4da1f",
+    "src/import-export.php": "52948c2a203b98c05311424c5164c7dd91f27a9962a0cf3a354e8516194ebc40",
+    "src/privacy.php": "51058d5ac1e661195985a00b5e531be8a0f836b3305a84a4272aff8adb8f8328",
+    "src/settings.json": "b316ffffb0dd3becf7e3de72a68531d5d0ce775fdc37e9c28789e2a443296137",
+    "src/templates/card.php": "8ba9bf4c0201c5c548623430d87685fec41603a201a3648e057a3aea41cfd357",
+    "src/zipcodes.php": "1639434c769cfd5df518e00f8be37c2407219024d9cefe5679aac007469c18b8"
+  }
+}
