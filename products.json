@@ -258,6 +258,12 @@
       "slug": "thermastor-plugin",
       "type": "plugin",
       "main": "thermastor-plugin.php"
+    },
+    {
+      "repo": "uw-csis-api",
+      "slug": "uw-csis-api",
+      "type": "plugin",
+      "main": "uw-csis-api.php"
     }
   ]
 }
