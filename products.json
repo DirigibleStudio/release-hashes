@@ -92,6 +92,12 @@
       "main": "dirigible-font-host.php"
     },
     {
+      "repo": "dirigible-photo-host",
+      "slug": "dirigible-photo-host",
+      "type": "plugin",
+      "main": "dirigible-photo-host.php"
+    },
+    {
       "repo": "dirigible-fonts",
       "slug": "dirigible-fonts",
       "type": "plugin",
