@@ -68,6 +68,12 @@
       "main": "dirigible-courses.php"
     },
     {
+      "repo": "dirigible-crosspost",
+      "slug": "dirigible-crosspost",
+      "type": "plugin",
+      "main": "dirigible-crosspost.php"
+    },
+    {
       "repo": "dirigible-documentation",
       "slug": "dirigible-documentation",
       "type": "plugin",
