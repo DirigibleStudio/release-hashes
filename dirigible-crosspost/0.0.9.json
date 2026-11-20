@@ -1,0 +1,25 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-crosspost",
+  "version": "0.0.9",
+  "repo": "DirigibleStudio/dirigible-crosspost",
+  "tag": "0.0.9",
+  "commit": "75e9dbe57ae3a6322d77e89c5d3b9bb0519c877b",
+  "published_at": "2026-11-20T20:54:42Z",
+  "tree": "2e096da986b640c38909ad35cb64ed3cefa5b96a50188d39371ae01d820812f2",
+  "files": {
+    "assets/editor.js": "761f3048d54f4302d16510686382b05919299da96ba321c13c00ca0c5639df26",
+    "dirigible-crosspost.php": "5f0b7eb677c04588f0be48d25bdf14208d7bbae589c8f03266d3b567caa8bb82",
+    "src/DirigibleCrosspost.php": "f76d9134efa0d86fa8ecb03197d2932c0c969e7c9585e7e5bf7038057dcefa9f",
+    "src/Doctor.php": "85d16e1f9a1610f7be4e352bd697c42709ba050de87905a0bd54523a430bd51e",
+    "src/Editor.php": "709729a30158de2c233014d7de7df0ecc18c3186a4b16734160d5f96d3faaf0f",
+    "src/ForeignImages.php": "19bce74610287d40aa367f9ff9b70a480b3380c580f3f50957fa4e10f3d99ff5",
+    "src/Media.php": "815a2794a5cd95d120e1789355c6786d6dbc32097521d053469e0260e5cbfcb3",
+    "src/Migrate.php": "c8065ecd14176cc3fe9ea1f7a232d6a0b1345395bc4eca18446d4dae016dcf56",
+    "src/Receiver.php": "0c3310c6174df5e2baee120becbffbb4c032c9a4e891f435160d25cc298dea8f",
+    "src/SettingsPage.php": "2af83c589d7662d6f4d519a9ec9556ee9b8a90bcbcf1d9f5df9d6640e07ded62",
+    "src/Source.php": "279d9377791152455e19fe676298c01b93501359916f0b62bf245fb9d66595fe",
+    "src/cli.php": "14d6c5ccad57647fe5bb9990f439312d280dc0fbfbfc6540a4f3c24a385b75cc",
+    "src/settings.json": "33ab61bee6b430b3ad40b3da4c7e2a911fe88f5bf74552c491efcd380a731666"
+  }
+}
