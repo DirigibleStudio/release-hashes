@@ -1,0 +1,28 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "dirigible-hours",
+  "version": "1.0.30",
+  "repo": "DirigibleStudio/dirigible-hours",
+  "tag": "1.0.30",
+  "commit": "637094d81fc804eb6b867ba20d8fcba3b60ba444",
+  "published_at": "2026-11-23T15:06:12Z",
+  "tree": "425f5b3f33a3dcc34b733a99b0bb907dc03f32ae6aa2ee35fbf1623900db0275",
+  "files": {
+    "dirigible-hours.php": "22ce0d1780013484cfb32f933f9ab68ae20f3eee8a345049d0bd3ab4a5673630",
+    "icon.svg": "2ce777f7dceb8d15f400ca51e9f0e1fb6e9dbff63a8ab42c9591ec9a425aa572",
+    "src/DirigibleHours.php": "75acafad848595531ef8a21cfb9d9ac49d15a5be906aef71a917ed2ef4f0fff7",
+    "src/admin/hours-page.css": "54e7536f031549b11445cfab4468a4ec1b78b9609ebd6c13d5f5ae835e20a875",
+    "src/admin/hours-page.js": "ca8e806f6b8d94b60bd10cbb6331b63cf758bba00fef266be1d9bc3b4e7bbda0",
+    "src/admin/hours-page.php": "67cb3a275ca3068d608152fe4c1194ad8f6340aa8c52161a27154392d50f34c6",
+    "src/customizer.json": "b78898dcf8ed703ab02ffb1b014bd56c09449a270362a2a0abfabef9d2ea6b98",
+    "src/customizer/settings/entity.json": "e1d1687be609084786f2102b707630c56439535f80c90b00e7a1a9ee90b5fa5f",
+    "src/hours-data.php": "2d3c2b10fe2fa36c5ab682ec3760e2dc07693136d793f55302c9aae2d4c9f037",
+    "src/jsonld/hours-schema.php": "9df5204b1cd80658ff45b3fe19c001cdde78e630b6de57c4f63c4c6573dde4b8",
+    "src/open-time.php": "bb3bba1778f4cffa3e5881c052c5e1ba74d7d6947602f001b91e5803c1bb7ae0",
+    "src/settings-transfer.php": "e6a96c1e720d570142f55628b00a15b7d778df6d325b37e6ffb0f0ffb8fb4867",
+    "src/templates/every-day.php": "f5aac2bb292d46e471f63f4b09ef68d59b76250e177a96438acde19fe1fc4478",
+    "src/templates/hours-today.php": "f5d5a1fd046ffcd4599a901ae667de6a5afedb69c023e80ddcb03c466600b17b",
+    "src/templates/inline-hours.php": "c61364e640db8a19ffcc75af43aa240dec0f0d10f13fd95f84f202b720538519",
+    "src/templates/next-open.php": "96dd3319af3dfd74d8dfa0c71925e2bfe3c46c0a4bbc833c5327832e2662ec2c"
+  }
+}
