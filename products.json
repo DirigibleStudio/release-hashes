@@ -272,10 +272,22 @@
       "main": "thermastor-plugin.php"
     },
     {
+      "repo": "uw-credit-transfer-calculator",
+      "slug": "uw-credit-transfer-calculator",
+      "type": "plugin",
+      "main": "uw-credit-transfer-calculator.php"
+    },
+    {
       "repo": "uw-csis-api",
       "slug": "uw-csis-api",
       "type": "plugin",
       "main": "uw-csis-api.php"
+    },
+    {
+      "repo": "uw-dynamic-thank-you-pages",
+      "slug": "uw-dynamic-thank-you-pages",
+      "type": "plugin",
+      "main": "uw-dynamic-thank-you-pages.php"
     }
   ]
 }
