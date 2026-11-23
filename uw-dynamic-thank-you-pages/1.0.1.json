@@ -1,0 +1,22 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "uw-dynamic-thank-you-pages",
+  "version": "1.0.1",
+  "repo": "DirigibleStudio/uw-dynamic-thank-you-pages",
+  "tag": "1.0.1",
+  "commit": "1259f75699478f7e5d077bc6c66e2031da9238fc",
+  "published_at": "2026-03-03T17:53:13Z",
+  "tree": "14f6044b945608214dd5bc8818a671e03871d39ca8b03ad7b80fbb61fd559cbc",
+  "files": {
+    ".gitattributes": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+    ".gitignore": "7fdf41597f8163877181b31327b6622b22213abf0dd03e3187951844fc331836",
+    "README.md": "39f5a91faf1b7b9fb6e8f52ddea7e142b3786e30a20803bf211c7df946419fda",
+    "inc/licensing.php": "307d39c2eaa07cd3c19214f402ad7d021375920065c89704bdfe3171e0686839",
+    "readme.txt": "a8c402fcce9db45fec5f2fc484865e3b8a675fd85f5d3bdd998bfcf37789bc76",
+    "src/UWDynamicThankYouPages.php": "d42ec1f890f87b311517ee8b4fb18aa05123792aa372b202f2228ad71cc44418",
+    "src/ajax.php": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/blocks/dynamic-deadline.php": "240cd026679833cbf61327b2b491b4e03c9928ce55e6e841023aaaf52aed7adb",
+    "src/blocks/dynamic-faq-display.php": "091f5217232d248f06dc0ae26b76c8f676db173ebd53e0be7e2e8312255c66a9",
+    "uw-dynamic-thank-you-pages.php": "73de8c9e993f79fe36436d69af2f3005860ed68857f8ea00e09e029bde761038"
+  }
+}
