@@ -1,0 +1,33 @@
+{
+  "format": "dirigible-hashes-v1",
+  "slug": "uw-credit-transfer-calculator",
+  "version": "1.0.20",
+  "repo": "DirigibleStudio/uw-credit-transfer-calculator",
+  "tag": "1.0.20",
+  "commit": "d113576722a904fa89ca09d167382cb72f672ff5",
+  "published_at": "2026-11-13T22:55:17Z",
+  "tree": "f0f0d573adfe0cf5b2c55249fc169e4581e357c17020a72b3dc9b7d0a6142924",
+  "files": {
+    "CHANGELOG.md": "806728fe1cd1de6e9745062bfaff8b7a641e770c54a46701bfaad2c382ada10a",
+    "README.md": "774fcdf37d1ca3e53265bc47eb8acaa31ffe7e064f92fac07f01a6c3ef7221cb",
+    "dist/css/styles.css": "772d19664cd0e8d637d4ef442d0b7472360b421b55c9331d841a48db8b0b72ca",
+    "dist/js/block-editor.js": "0a3fbf17f48072a6ee678ad8962341c7272e9557295910f1ed84197bd62d0031",
+    "dist/js/block-editor.js.map": "6315667a6307b1b330a407b13ccb9ae2ace98c0e1edd657eea16a7e6cd8646e5",
+    "dist/js/calculator.js": "81c5e443c253c453ba3f4c1055f18ad3969c41b20edb163849dc0e7b8ae83d21",
+    "dist/js/calculator.js.map": "64dec97eb4c38b1b3fbedee1daa06b1023b82a92776cd4190fcb290d71294322",
+    "dist/js/thank-you-display.js": "29682359d3d3fe95ba00705fd1f779e49e4ead82b28b389ba8970bb0194b28fe",
+    "dist/js/thank-you-editor.js": "bcb76c3f44e59fa2e879b9fc90fc97ff5119e3173ce999c2ccec846fc5b3db51",
+    "inc/licensing.php": "4382adb004fb4fbe55fb7358a9f6bac774fefaf316fda0315fa389d749271cc0",
+    "src/UWCreditTransferCalculator.php": "87fb156af20a39333b08a5fd8dbcb696ff35c09420181ee0ef20086fdd7aacea",
+    "src/ajax.php": "5036b3f8d9b54795e636346e656cecfa164dd245e0c62db8af0bd33a420448a9",
+    "src/api.php": "6da4a9e1326354c33ddbd54742136fb4fc8e388645d80ba9d0193073797361e6",
+    "src/blocks/calculator/block-editor.jsx": "c9426718e958d39970f14da32121fc1047dd346e583d342cb915000b7d9c0169",
+    "src/blocks/calculator/block.json": "2c62a85b48ac3395f3c2da2df9f0373bdff7aae4a458d2429a365d01e91417d5",
+    "src/blocks/thank-you/block.json": "1c557749d60e9ca407031d976d9f5f0f0b0c7be92407743f59bc84110dab97e2",
+    "src/blocks/thank-you/thank-you-editor.jsx": "be9b0f0d90627d96262197ba7b91dc3b2c99e96e728182425849ee2ae3ee563b",
+    "src/scripts/Calculator.jsx": "c00cd1d00220f64e4abafcc0189a83c3b0c552b53513eca1b9bc496d03b70ee0",
+    "src/scripts/ThankYouDisplay.jsx": "fb790deb65f3577843299ee67a982aa69dd5388f127e9dffae448e52306a6b7a",
+    "src/styles/uw-credit-styles.css": "a500af9f8fd7323123dc98b7647efc0fd49649318c549f1caee231a300048bec",
+    "uw-credit-transfer-calculator.php": "1131994dada0a1d3c7f82044f654477aa466cf2d6d7e8f65bbec541be4b3fec9"
+  }
+}
